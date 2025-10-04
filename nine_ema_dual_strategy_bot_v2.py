@@ -316,6 +316,7 @@ def run_strategy(args: argparse.Namespace) -> None:
     entries_today: List[Position] = []
     signal_rows: List[Dict[str, object]] = []
     suppressed_today: List[Dict[str, object]] = []
+    filter_events: List[Dict[str, str]] = []
 
     market_ok, market_reason = check_market_filter(start)
 
@@ -329,6 +330,36 @@ def run_strategy(args: argparse.Namespace) -> None:
         df = df.sort_index()
         if isinstance(df.index, pd.DatetimeIndex) and df.index.tz is not None:
             df.index = df.index.tz_convert(None)
+        if len(df) < 25:
+            filter_events.append({"ticker": ticker, "filter": "INSUFFICIENT_HISTORY", "detail": "<25 bars after fetch"})
+            continue
+
+        df["dollar_volume"] = df["close"] * df["volume"]
+        avg_dollar_volume = float(df["dollar_volume"].tail(20).mean())
+        if avg_dollar_volume < 5_000_000:
+            filter_events.append({"ticker": ticker, "filter": "LOW_DOLLAR_VOLUME", "detail": f"20d avg ${avg_dollar_volume/1_000_000:.1f}M"})
+            continue
+
+        prev_close = float(df["close"].iloc[-2]) if len(df) >= 2 else float("nan")
+        open_today = float(df["open"].iloc[-1])
+        if prev_close and not math.isnan(prev_close) and prev_close != 0:
+            gap_pct = abs(open_today - prev_close) / prev_close
+        else:
+            gap_pct = 0.0
+        if gap_pct > 0.08:
+            filter_events.append({"ticker": ticker, "filter": "GAP_FILTER_TRIGGERED", "detail": f"gap {gap_pct*100:.1f}%"})
+            continue
+
+        latest = df.iloc[-1]
+        if prev_close and not math.isnan(prev_close) and prev_close != 0:
+            close_change = abs(latest["close"] - prev_close) / prev_close
+        else:
+            close_change = 0.0
+        range_pct = (latest["high"] - latest["low"]) / latest["close"] if latest["close"] else 0.0
+        if range_pct > 0.2 or close_change > 0.2:
+            filter_events.append({"ticker": ticker, "filter": "DATA_SANITY_FLAG", "detail": f"range {range_pct*100:.1f}% change {close_change*100:.1f}%"})
+            continue
+
         df["ema9"] = df["close"].ewm(span=9, adjust=False).mean()
         df["ema20"] = df["close"].ewm(span=20, adjust=False).mean()
         df["atr14"] = compute_atr(df, 14)
@@ -536,6 +567,12 @@ def run_strategy(args: argparse.Namespace) -> None:
         for info in suppressed_today:
             highlights_lines.append(
                 f"{info['ticker']} [{info['strategy']}] → {info['reason']} | Buy Zone [{format_float(info['buy_zone_low'])}, {format_float(info['buy_zone_high'])}]"
+            )
+    if filter_events:
+        highlights_lines.append("Screening filters triggered:")
+        for event in filter_events:
+            highlights_lines.append(
+                f"{event['ticker']} — {event['filter']} ({event['detail']})"
             )
     if closed_today:
         highlights_lines.append("Exits:")

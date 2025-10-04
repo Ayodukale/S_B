@@ -565,24 +565,186 @@ That’s it: when the market is weak, the **Entries** section will either be emp
 
 ---
 
-# 🧾 Technical Debt: Sector Rotation Awareness (Later)
+# ✅ Risk & Sanity Enhancements (v1.1)
 
-**Intent:** Prefer pullbacks in **leading sectors**; throttle signals from lagging sectors.
-
-**Approach (later):**
-
-* Track SPDR sector ETFs (e.g., XLK, XLE, XLI, XLF, XLV, XLY, XLP, XLRE, XLU, XLB).
-* Score each sector daily with the same health test (Close>EMA20, Close>SMA50, rising SMA50).
-* Add a **sector_score** to each ticker (map via metadata/fundamentals).
-* During screening:
-
-  * **Boost** signals from top-ranked sectors,
-  * **Suppress** or **de-prioritize** signals from bottom sectors.
-* Surface a “Sector Focus” line in Highlights: e.g.,
-
-  > “Sector Focus: Energy, Industrials strong; Tech mixed — priority on XLE/XLI tickers.”
-
-**Status:** Not required for v1. Capture as an enhancement.
+These are incremental improvements to clarity, transparency, and downside control.  
+They do **not** alter strategy logic — only improve safety and readability.
 
 ---
+
+## 1. Hard Stop (Explicit Risk)
+**Purpose:** record a fixed 1R distance per trade to standardize R-based metrics.
+
+**Rule:**
+```
+hard_stop = entry_price - 1.5 × ATR14
+```
+Store in ledger at open.  
+This enables consistent `R_peak` and `R_multiple` calculations and makes downside risk explicit.
+
+---
+
+## 2. Max Position Cap + UX Display
+**Purpose:** keep trader cognitive load low and surface risk state in Highlights.
+
+**Rules:**
+- Suppress new entries if `OPEN positions ≥ 5`.
+- Always show a summary line in Highlights:
+
+If under cap:
+```
+Open Positions: {open_count} / 5 Max
+```
+If at cap:
+```
+⚠️ Max positions reached (5). Suppressing new entries.
+```
+
+These appear directly beneath the **Market Check** line.
+
+---
+
+## 3. Earnings Guard + Entry Sanity Filters
+
+**Purpose:** avoid entries around earnings, gaps, or bad data that distort signals.
+
+### 3.1 Earnings Guard (Critical)
+Reject entries if the next earnings report is within ±2 trading days.
+- **Source:** `yfinance` (`ticker.calendar`) or fallback API.
+- **Fail-open:** if no data, do not block.
+
+Surface reason:
+```
+EARNINGS_GUARD_ACTIVE — earnings within 2 days
+```
+
+### 3.2 Gap Filter
+Reject entries when:
+```
+abs(Open - PrevClose) / PrevClose > 0.08
+```
+Surface reason:
+```
+GAP_FILTER_TRIGGERED — gap > 8%
+```
+
+### 3.3 Data Sanity Check
+Skip or flag bars where:
+```
+(High - Low)/Close > 0.2  OR  abs(Close - PrevClose)/PrevClose > 0.2
+```
+Surface reason:
+```
+DATA_SANITY_FLAG — abnormal bar (>20% range/change)
+```
+
+Each filter should appear in the daily log if triggered, so you always know *why* a ticker was skipped.
+
+---
+
+## 4. Market Filter (Reminder)
+No changes — already implemented.
+
+---
+
+## 5. Sector Rotation (Technical Debt)
+Placeholder for v2.  
+Score each sector ETF (XLK, XLE, XLF, etc.) using the same EMA/SMA health test (Close>EMA20 & SMA50 rising).  
+Boost signals from top sectors, throttle bottom sectors.  
+Surface optional line:
+```
+Sector Focus: Energy, Industrials strong; Tech mixed.
+
+
+
+
+
+# 🧱 Technical Debt Log (Deferred Enhancements)
+
+## 1. Sector Rotation Awareness (Priority TD)
+**Intent:** improve hit rate by focusing entries in sectors showing broad strength.
+
+**Approach (v2):**
+- Evaluate sector ETFs (XLK, XLE, XLI, XLF, XLV, XLY, XLRE, XLB, XLP, XLU).
+- Health test per ETF: `Close > EMA20`, `Close > SMA50`, and `SMA50 rising`.
+- Score each sector: 1 = healthy, 0 = unhealthy.
+- Map tickers to sectors via fundamentals metadata.
+- Boost signals from top N sectors; suppress bottom N.
+- Display summary line:
+  ```
+  Sector Focus: Energy, Industrials strong; Tech mixed.
+  ```
+**Success condition:** ≥70% of triggered entries belong to top-ranked sectors.
+
+---
+
+## 2. Auto-Universe Refresh
+**Intent:** maintain a dynamic watchlist without manual edits.
+
+**Approach:**  
+Nightly fetch top 500–1000 tickers by 20-day average **dollar volume**, filter out ADRs/penny stocks, overwrite `watchlist.txt`.
+
+**Success condition:** >90% of tickers in `watchlist.txt` have daily $-volume > $10M.
+
+---
+
+## 3. Alternate Data Provider Layer
+**Intent:** reduce reliance on Yahoo endpoints.
+
+**Approach:**  
+Stack `Polygon` or `Finnhub` APIs as secondary data fetchers.  
+Fail-open if quota exceeded.  
+Run quick integrity check:
+```
+if abs(yf_close - alt_close) / yf_close > 0.02:
+    prefer alt_close
+```
+
+**Success condition:** 0 missing bars in 30-day test; <2% mismatch between providers.
+
+---
+
+## 4. Metrics & Analytics Dashboard
+**Intent:** provide simple backtest-style health metrics.
+
+**Proposed metrics:**
+- Win rate with vs without Market Filter.
+- % trades hitting Time Stop (should stay <15%).
+- Median hold days.
+- Median R on winners vs losers.
+- Distribution of R_peak.
+
+**Success condition:** all metrics computed in ≤5s locally (no heavy backtester).
+
+---
+
+## 5. Reporting Enhancements
+**Intent:** streamline review and journaling.
+
+**Future additions:**
+- Optional export to Notion or Google Sheets.
+- Weekly “Summary Snapshot” MD file with:
+  - New entries
+  - Exits
+  - Avg R per closed trade
+  - Top 3 performers by % gain
+
+**Success condition:** one-file summary readable in <30s.
+
+---
+
+## 6. Alerts / Notifications Layer
+**Intent:** optional push updates when Highlights refresh.
+
+**Approach:**  
+Integrate lightweight webhook (Discord / Slack / Telegram) that posts:
+```
+📈 New Entry: AMD [BASE] 128.8–129.4
+📉 Exit: META (EMA20 break) +14.6%
+```
+**Success condition:** single push/day, no spam.
+
+---
+
+🧩 *Note:* Tech Debt items should only be activated once v1.1 has run **≥30 clean nightly cycles** without manual intervention.
 
