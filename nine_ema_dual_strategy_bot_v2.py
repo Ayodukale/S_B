@@ -18,15 +18,163 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import math
 import os
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import numpy as np
 import requests
+
+
+ROOT = Path(__file__).resolve().parent
+DATA_DIR = ROOT / 'data'
+EARNINGS_CACHE_PATH = DATA_DIR / 'earnings_cache.json'
+CACHE_TTL_DAYS = 3
+
+
+
+def load_earnings_cache() -> Dict[str, Dict[str, str]]:
+    if not EARNINGS_CACHE_PATH.exists():
+        return {}
+    try:
+        return json.loads(EARNINGS_CACHE_PATH.read_text())
+    except Exception:
+        return {}
+
+
+def save_earnings_cache(cache: Dict[str, Dict[str, str]]) -> None:
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        EARNINGS_CACHE_PATH.write_text(json.dumps(cache, indent=2))
+    except Exception:
+        pass
+
+
+def parse_date(value: Optional[str]) -> Optional[datetime.date]:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value).date()
+    except Exception:
+        try:
+            return datetime.strptime(value, "%Y-%m-%d").date()
+        except Exception:
+            return None
+
+
+def fetch_next_earnings_finnhub(ticker: str) -> Optional[datetime.date]:
+    api_key = os.getenv("FINNHUB_API_KEY")
+    if not api_key:
+        return None
+    today = datetime.now(timezone.utc).date()
+    horizon = today + timedelta(days=7)
+    url = "https://finnhub.io/api/v1/calendar/earnings"
+    params = {
+        "symbol": ticker.upper(),
+        "from": today.isoformat(),
+        "to": horizon.isoformat(),
+        "token": api_key,
+    }
+    try:
+        resp = requests.get(url, params=params, timeout=10)
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception:
+        return None
+    items = payload.get("earningsCalendar") or []
+    candidates = [parse_date(item.get("date")) for item in items]
+    candidates = [d for d in candidates if d and d >= today]
+    if not candidates:
+        return None
+    return min(candidates)
+
+
+def fetch_next_earnings_polygon(ticker: str) -> Optional[datetime.date]:
+    api_key = os.getenv("POLYGON_API_KEY")
+    if not api_key:
+        return None
+    today = datetime.now(timezone.utc).date()
+    url = "https://api.polygon.io/vX/reference/events/earnings"
+    params = {
+        "ticker": ticker.upper(),
+        "order": "asc",
+        "limit": 1,
+        "sort": "startDate",
+        "apiKey": api_key,
+        "start": today.isoformat(),
+    }
+    try:
+        resp = requests.get(url, params=params, timeout=10)
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception:
+        return None
+    results = payload.get("results") or []
+    if not results:
+        return None
+    date_str = results[0].get("startDate") or results[0].get("fiscalPeriod")
+    return parse_date(date_str)
+
+
+def fetch_next_earnings_yfinance(ticker: str) -> Optional[datetime.date]:
+    try:
+        import yfinance as yf  # type: ignore
+    except ImportError:
+        return None
+    try:
+        cal = yf.Ticker(ticker).calendar
+    except Exception:
+        return None
+    if cal is None:
+        return None
+    value = None
+    if hasattr(cal, "empty"):
+        if cal.empty:
+            return None
+        if "Earnings Date" in cal.columns:
+            value = cal.iloc[0].get("Earnings Date")
+        elif len(cal.columns) > 0:
+            value = cal.iloc[0][0]
+    elif isinstance(cal, dict):
+        value = cal.get("Earnings Date")
+    if isinstance(value, (list, tuple)) and value:
+        value = value[0]
+    if hasattr(value, "to_pydatetime"):
+        value = value.to_pydatetime()
+    if isinstance(value, datetime):
+        return value.date()
+    if isinstance(value, str):
+        return parse_date(value)
+    return None
+
+
+def get_next_earnings_date(ticker: str, cache: Dict[str, Dict[str, str]]) -> Optional[datetime.date]:
+    today = datetime.now(timezone.utc).date()
+    entry = cache.get(ticker.upper())
+    if entry:
+        fetched = parse_date(entry.get("fetched_at"))
+        if fetched and (today - fetched).days <= CACHE_TTL_DAYS:
+            cached_date = parse_date(entry.get("next_earnings"))
+            if cached_date:
+                return cached_date
+            if entry.get("next_earnings") is None:
+                return None
+    # fetch fresh
+    next_date = (
+        fetch_next_earnings_finnhub(ticker)
+        or fetch_next_earnings_polygon(ticker)
+        or fetch_next_earnings_yfinance(ticker)
+    )
+    cache[ticker.upper()] = {
+        "next_earnings": next_date.isoformat() if next_date else None,
+        "fetched_at": today.isoformat(),
+    }
+    return next_date
 
 
 def _mock_bars(ticker: str, periods: int = 180) -> pd.DataFrame:
@@ -318,8 +466,10 @@ def run_strategy(args: argparse.Namespace) -> None:
     suppressed_today: List[Dict[str, object]] = []
     filter_events: List[Dict[str, str]] = []
 
+    earnings_cache = load_earnings_cache()
     market_ok, market_reason = check_market_filter(start)
 
+    today_date = datetime.now(timezone.utc).date()
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     for ticker in tickers:
@@ -377,10 +527,19 @@ def run_strategy(args: argparse.Namespace) -> None:
         notes = ""
         entry_triggered = False
         suppressed_entry = False
+        next_earnings_date = None
 
         allow_entries = market_ok or market_reason.startswith("market_check_skipped")
 
-        if setup and in_buy_zone:
+        if setup and allow_entries:
+            next_earnings_date = get_next_earnings_date(ticker, earnings_cache)
+            if next_earnings_date:
+                days_until = (next_earnings_date - today_date).days
+                if 0 <= days_until <= 2:
+                    action = "EARNINGS_GUARD_ACTIVE"
+                    notes = f"Earnings {next_earnings_date.isoformat()}"
+                    suppressed_entry = True
+        if setup and in_buy_zone and not suppressed_entry:
             if allow_entries:
                 action = "BUY_ZONE_TRIGGERED"
                 notes = "Price inside EMA buy zone"
@@ -404,7 +563,7 @@ def run_strategy(args: argparse.Namespace) -> None:
                     "buy_zone_low": buy_zone_low,
                     "buy_zone_high": buy_zone_high,
                     "close": float(round(latest["close"], 2)),
-                    "reason": market_reason,
+                    "reason": notes or action,
                 }
             )
 
@@ -431,6 +590,7 @@ def run_strategy(args: argparse.Namespace) -> None:
                     "notes": notes,
                     "market_ok": market_flag,
                     "market_reason": market_reason,
+                    "next_earnings": next_earnings_date.isoformat() if next_earnings_date else None,
                 }
             )
 
@@ -525,6 +685,7 @@ def run_strategy(args: argparse.Namespace) -> None:
             "notes",
             "market_ok",
             "market_reason",
+            "next_earnings",
         ],
     )
 
@@ -563,7 +724,7 @@ def run_strategy(args: argparse.Namespace) -> None:
                 f"{pos.ticker} [{pos.strategy}] → ENTERED @ {format_float(pos.entry_price)} | Buy Zone"
             )
     if suppressed_today:
-        highlights_lines.append("Entries (suppressed by market filter):")
+        highlights_lines.append("Entries (suppressed by guards):")
         for info in suppressed_today:
             highlights_lines.append(
                 f"{info['ticker']} [{info['strategy']}] → {info['reason']} | Buy Zone [{format_float(info['buy_zone_low'])}, {format_float(info['buy_zone_high'])}]"
@@ -599,6 +760,7 @@ def run_strategy(args: argparse.Namespace) -> None:
     with open(args.highlights, "w") as handle:
         handle.write("\n".join(highlights_lines))
 
+    save_earnings_cache(earnings_cache)
 
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate swing signals and ledger CSVs.")

@@ -106,6 +106,7 @@ def build_payload(signals_csv: Path, ledger_csv: Path) -> dict:
         df = pd.read_csv(signals_csv)
         has_market_ok = "market_ok" in df.columns
         has_market_reason = "market_reason" in df.columns
+        has_next_earnings = "next_earnings" in df.columns
         for _, row in df.iterrows():
             record = {
                 "date": str(row.get("date", "")),
@@ -130,6 +131,10 @@ def build_payload(signals_csv: Path, ledger_csv: Path) -> dict:
                 record["market_reason"] = "" if pd.isna(reason) else str(reason)
             else:
                 record["market_reason"] = ""
+            record["next_earnings"] = None
+            if has_next_earnings:
+                ne = row.get("next_earnings")
+                record["next_earnings"] = None if pd.isna(ne) else str(ne)
             signals.append(record)
 
     positions = []

@@ -656,6 +656,111 @@ Surface optional line:
 Sector Focus: Energy, Industrials strong; Tech mixed.
 
 
+**OCTOBER FOURTH UPDATE**
+
+# ⚙️ Data Provider Framework (v1.2 Update)
+
+> Purpose: Stabilize nightly data fetches and improve earnings date accuracy without sacrificing simplicity.
+
+---
+
+## 1. Provider Hierarchy & Fetch Logic
+
+To prevent downtime or incomplete data, the system now supports a **multi-provider hierarchy**.
+
+### Default Order:
+1. **Polygon** → Primary (bars, fundamentals, news)
+2. **Finnhub** → Secondary (bars + earnings calendar)
+3. **yfinance** → Fallback (bars only)
+4. **Synthetic / Mock** → Emergency fallback (pipeline continuity)
+
+### Fetch Adapter
+The `get_bars()` function routes requests through providers in priority order:
+
+```python
+PROVIDER = os.getenv("DATA_PROVIDER", "auto")
+
+def get_bars(tkr, start):
+    if PROVIDER in ("polygon", "auto"):
+        df = fetch_polygon(tkr, start)
+        if df is not None and not df.empty: return df
+
+    if PROVIDER in ("finnhub", "auto"):
+        df = fetch_finnhub(tkr, start)
+        if df is not None and not df.empty: return df
+
+    if PROVIDER in ("yfinance", "auto"):
+        try:
+            return yf.download(tkr, start=start, progress=False, auto_adjust=True)
+        except Exception:
+            pass
+
+    return _mock_bars(tkr, start)
+```
+
+This ensures:
+- **High reliability:** at least one provider always responds.
+- **Clean fallback chain:** no single dependency can break the nightly run.
+- **Minimal code churn:** adding/removing providers doesn’t affect strategy logic.
+
+### Environment Config (GitHub Actions / Local)
+
+```
+DATA_PROVIDER=auto
+POLYGON_API_KEY=your_polygon_key
+FINNHUB_API_KEY=your_finnhub_key
+```
+
+> `auto` lets the adapter cascade through Polygon → Finnhub → yfinance automatically.
+
+---
+
+## 2. Earnings Guard Data Source (Primary)
+
+The **Earnings Guard** logic now uses **Finnhub’s `/calendar/earnings`** endpoint as the **authoritative source** for upcoming events.
+
+### Reasoning:
+- Finnhub offers a **dedicated, structured earnings calendar API**.
+- Reliable for U.S. and large global tickers.
+- JSON response includes `symbol`, `date`, and `time` fields.
+- Free-tier access suitable for daily batch checks.
+- Polygon’s filings endpoint or `yfinance.calendar` act as **fallbacks**.
+
+### Implementation Notes
+
+#### Endpoint
+```
+GET https://finnhub.io/api/v1/calendar/earnings?symbol={TICKER}&from={TODAY}&to={TODAY+7}&token={API_KEY}
+```
+
+#### Guard Logic
+```python
+next_earnings = get_next_earnings_date(symbol)
+if next_earnings and (0 <= (next_earnings - today).days <= 2):
+    block_entry(symbol, reason="EARNINGS_GUARD_ACTIVE")
+```
+
+#### Fallback Behavior
+- If Finnhub returns no data → check Polygon filings.
+- If still empty → optional fallback to `yfinance.calendar`.
+- If all fail → **fail open** (allow entry).
+
+#### Call Efficiency
+- Only call for tickers **passing entry filters** (to stay within free-tier quota).
+- Cache earnings results locally for **3–5 days** per symbol.
+
+---
+
+## 3. Summary: Why This Matters
+
+| Objective | Old | New |
+|------------|-----|-----|
+| **Data continuity** | Single-source (yfinance) | Cascading multi-provider |
+| **Reliability** | Susceptible to Yahoo outages | Resilient with 3-tier failover |
+| **Earnings Guard** | yfinance.calendar (inconsistent) | Finnhub-first (accurate) |
+| **Future Scalability** | Manual migration | Plug-in adapter (1 line per provider) |
+
+✅ **Outcome:** You now have a robust, production-grade data foundation — one that auto-heals if any provider fails, while ensuring earnings-date accuracy for entry suppression.
 
 
 
