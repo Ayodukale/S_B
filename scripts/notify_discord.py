@@ -72,6 +72,7 @@ def build_embed() -> dict:
         "color": 0x2563EB,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "fields": load_entry_fields(),
+        "footer": {"text": "Chat with SwingBot → http://chat.openai.com/g/gpt-swingbot"}
     }
     return embed
 
