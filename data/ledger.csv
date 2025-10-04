@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AMD,BASE,OPEN,2025-10-03,129.0,,,-0.89,-0.38,0,127.86,Entered on buy zone trigger
+AMD,BASE,OPEN,2025-10-03,129.0,,,-2.97,-1.67,0,125.16,Entered on buy zone trigger

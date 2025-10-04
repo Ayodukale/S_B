@@ -6,5 +6,5 @@ Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 
 Open Positions (top):
-AMD [BASE] -0.89% | R_peak -0.38 | Held 0d
+AMD [BASE] -2.97% | R_peak -1.67 | Held 0d
 ```
