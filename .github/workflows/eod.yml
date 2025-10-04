@@ -31,3 +31,10 @@ jobs:
           git add data/*.csv data/*.txt data/*.json data/*.md
           git commit -m "EOD update" || echo "No changes"
           git push
+      - name: Notify Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK_SWINGBOT: ${{ secrets.DISCORD_WEBHOOK_SWINGBOT }}
+          DISCORD_WEBHOOK_SWINGBOT_2: ${{ secrets.DISCORD_WEBHOOK_SWINGBOT_2 }}
+        run: |
+          python scripts/notify_discord.py

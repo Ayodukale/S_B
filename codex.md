@@ -190,6 +190,11 @@ jobs:
 
 **Enable GitHub Pages** (Settings → Pages) to serve `/data/signals.json` and `/data/highlights.md` via a stable URL.
 
+**Optional Discord Alerts**
+
+* Add secrets `DISCORD_WEBHOOK_SWINGBOT` (required) and `DISCORD_WEBHOOK_SWINGBOT_2` (optional) under Settings → Secrets → Actions.
+* Each run posts an embed-style summary pulled from `data/highlights.txt` and the latest entries.
+
 ---
 
 ## 5) Data Model (what the agent reads)
