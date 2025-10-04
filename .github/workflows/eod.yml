@@ -1,3 +1,6 @@
+permissions:
+  contents: write
+
 name: EOD Swing Signals
 on:
   schedule:
