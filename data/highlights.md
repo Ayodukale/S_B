@@ -5,10 +5,11 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries:
-AVGO [BASE] → ENTERED @ 122.75 | Buy Zone
+TSLA [BASE] → ENTERED @ 117.30 | Buy Zone
 
 Open Positions (top):
-NVDA [BASE] 55.50% | R_peak 12.22 | Held -1d
-AMD [BASE] 11.71% | R_peak 6.49 | Held 1d
-AVGO [BASE] 0.00% | R_peak 0.00 | Held 0d
+NVDA [BASE] 54.46% | R_peak 11.89 | Held 0d
+AVGO [BASE] 10.53% | R_peak 4.58 | Held 0d
+TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMD [BASE] -5.93% | R_peak -2.99 | Held 1d
 ```
