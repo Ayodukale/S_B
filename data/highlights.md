@@ -7,8 +7,8 @@ Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Open Positions (top):
 NVDA [BASE] 54.46% | R_peak 11.89 | Held 0d
-AVGO [BASE] 8.76% | R_peak 4.39 | Held 0d
-TSLA [BASE] 6.51% | R_peak 3.03 | Held 0d
-META [BASE] 3.08% | R_peak 1.40 | Held 0d
-AMD [BASE] -7.91% | R_peak -3.94 | Held 1d
+AVGO [BASE] 13.40% | R_peak 6.00 | Held 0d
+TSLA [BASE] 9.60% | R_peak 4.68 | Held 0d
+AMD [BASE] 1.37% | R_peak 1.29 | Held 1d
+META [BASE] -0.08% | R_peak -0.04 | Held 0d
 ```
