@@ -26,7 +26,10 @@ HIGHLIGHTS_PATH = DATA_DIR / "highlights.txt"
 SIGNALS_PATH = DATA_DIR / "out_signals.csv"
 
 ENTRY_ACTIONS = {"BUY_ZONE_TRIGGERED", "EARNINGS_GUARD_ACTIVE", "CONFIRM_BREAKOUT_ENTRY"}
-WEBHOOK_VARS = ["DISCORD_WEBHOOK_SWINGBOT", "DISCORD_WEBHOOK_SWINGBOT_2"]
+WEBHOOK_CONFIG = [
+    ("DISCORD_WEBHOOK_SWINGBOT", "SwingBot"),
+    ("DISCORD_WEBHOOK_SWINGBOT_2", "SwingBot_2"),
+]
 
 
 def load_highlights() -> str:
@@ -81,24 +84,23 @@ def post_webhook(url: str, payload: dict) -> None:
 
 
 def main() -> None:
-    webhooks = [os.getenv(var) for var in WEBHOOK_VARS]
-    webhooks = [url for url in webhooks if url]
-    if not webhooks:
-        print("No Discord webhooks configured; skipping notification.")
-        return
-
     embed = build_embed()
-    payload = {
-        "username": "SwingBot",
-        "embeds": [embed],
-    }
-
-    for url in webhooks:
+    posted = False
+    seen_urls = set()
+    for env_var, username in WEBHOOK_CONFIG:
+        url = os.getenv(env_var)
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        payload = {"username": username, "embeds": [embed]}
         try:
             post_webhook(url, payload)
-            print(f"Sent highlights to Discord webhook: {url[-20:]}")
+            print(f"Sent highlights to Discord webhook ({env_var}): {url[-20:]}")
+            posted = True
         except Exception as exc:
-            print(f"Warning: failed to post to Discord webhook ({url[-20:]}): {exc}", file=sys.stderr)
+            print(f"Warning: failed to post to Discord webhook {env_var}: {exc}", file=sys.stderr)
+    if not posted:
+        print("No Discord webhooks configured; skipping notification.")
 
 
 if __name__ == "__main__":

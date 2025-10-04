@@ -193,6 +193,7 @@ jobs:
 **Optional Discord Alerts**
 
 * Add secrets `DISCORD_WEBHOOK_SWINGBOT` (required) and `DISCORD_WEBHOOK_SWINGBOT_2` (optional) under Settings → Secrets → Actions.
+* `DISCORD_WEBHOOK_SWINGBOT` posts as **SwingBot**; `DISCORD_WEBHOOK_SWINGBOT_2` (optional) posts as **SwingBot_2** so you can route to another channel. Leave the second blank if you only need one notification.
 * Each run posts an embed-style summary pulled from `data/highlights.txt` and the latest entries.
 
 ---
