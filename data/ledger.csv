@@ -1,0 +1,4 @@
+ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
+AMD,BASE,OPEN,2025-10-02,125.92,,,11.71,6.49,1,140.66,Entered on buy zone trigger
+AVGO,BASE,OPEN,2025-10-03,122.75,,,0.0,0.0,0,122.75,Entered on buy zone trigger
+NVDA,BASE,OPEN,2025-10-03,121.47,,,55.5,12.22,-1,188.89,Entered on buy zone trigger
