@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SwingBot Data</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; margin: 2rem auto; max-width: 720px; line-height: 1.6; color: #1f2933; }
+    h1 { margin-bottom: 0.25rem; }
+    code { background: #f3f4f6; padding: 0.075rem 0.35rem; border-radius: 4px; }
+    a { color: #2563eb; }
+    .note { margin-top: 1.5rem; padding: 1rem; border-radius: 8px; background: #f9fafb; border: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to SwingBot</h1>
+  <p>
+    GitHub Pages serves the nightly export from the <code>data/</code> folder. Use these links in your
+    Custom GPT action configuration:
+  </p>
+  <ul>
+    <li><a href="data/signals.json">data/signals.json</a> – machine-readable signals &amp; positions</li>
+    <li><a href="data/highlights.md">data/highlights.md</a> – one-glance human brief</li>
+  </ul>
+  <div class="note">
+    <strong>Heads up:</strong> The GitHub Actions workflow updates these files every weekday ~5:05 pm ET.
+    If you’re testing locally, run <code>python run.py</code> before pushing so Pages reflects the latest snapshot.
+  </div>
+</body>
+</html>
