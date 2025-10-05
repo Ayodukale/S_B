@@ -277,12 +277,13 @@ def fetch_finnhub_daily_bars(ticker: str, start: datetime) -> pd.DataFrame:
     return df
 
 
+
 def get_bars(ticker: str, start: datetime) -> pd.DataFrame:
     """Fetch daily bars with multiple fallbacks (yfinance → Polygon → Finnhub → synthetic)."""
     try:
         import yfinance as yf  # type: ignore
     except ImportError as exc:  # pragma: no cover - surfaced to caller
-        raise RuntimeError("yfinance is required; run `pip install -r requirements.txt`." ) from exc
+        raise RuntimeError("yfinance is required; run `pip install -r requirements.txt`.") from exc
 
     try:
         df = yf.download(
@@ -291,12 +292,16 @@ def get_bars(ticker: str, start: datetime) -> pd.DataFrame:
             progress=False,
             auto_adjust=True,
             threads=False,
-            show_errors=False,
         )
         if df.empty:
             df = yf.Ticker(ticker).history(period="2y", auto_adjust=True, actions=False)
         if not df.empty:
-            df = df.rename(columns=str.lower)
+            if isinstance(df.columns, pd.MultiIndex):
+                df.columns = [str(col[0]).lower() for col in df.columns]
+            else:
+                df = df.rename(columns=str.lower)
+            keep = [col for col in ("open", "high", "low", "close", "volume") if col in df.columns]
+            df = df[keep]
             df.attrs["source"] = "yfinance"
             return df
     except Exception:

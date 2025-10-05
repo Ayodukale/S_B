@@ -4,7 +4,11 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+META [BASE] → ENTERED @ 123.64 | Buy Zone
+GOOGL [BASE] → ENTERED @ 245.35 | Buy Zone
 
 Open Positions (top):
-AMD [BASE] -2.97% | R_peak -1.67 | Held 0d
+META [BASE] 0.00% | R_peak 0.00 | Held 0d
+GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
