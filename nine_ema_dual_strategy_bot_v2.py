@@ -29,6 +29,7 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 import numpy as np
 import requests
+import time
 
 
 ROOT = Path(__file__).resolve().parent
@@ -194,6 +195,8 @@ def _mock_bars(ticker: str, periods: int = 180) -> pd.DataFrame:
     return df
 
 
+
+
 def fetch_polygon_daily_bars(ticker: str, start: datetime) -> pd.DataFrame:
     api_key = os.getenv("POLYGON_API_KEY")
     if not api_key:
@@ -207,79 +210,98 @@ def fetch_polygon_daily_bars(ticker: str, start: datetime) -> pd.DataFrame:
         "limit": 5000,
         "apiKey": api_key,
     }
-    try:
-        resp = requests.get(url, params=params, timeout=10)
-        resp.raise_for_status()
-    except Exception:
-        return pd.DataFrame()
-    payload = resp.json()
-    results = payload.get("results") or []
-    if not results:
-        return pd.DataFrame()
-    rows = []
-    for item in results:
-        ts = item.get("t")
-        if ts is None:
-            continue
-        dt = datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
-        rows.append(
-            {
-                "date": dt,
-                "open": item.get("o"),
-                "high": item.get("h"),
-                "low": item.get("l"),
-                "close": item.get("c"),
-                "volume": item.get("v"),
-            }
-        )
-    if not rows:
-        return pd.DataFrame()
-    df = pd.DataFrame(rows).set_index("date").sort_index()
-    df.attrs["source"] = "polygon"
-    return df
-
+    for attempt in range(2):
+        try:
+            resp = requests.get(url, params=params, timeout=10)
+            resp.raise_for_status()
+            payload = resp.json()
+        except Exception:
+            payload = None
+        if not payload:
+            return pd.DataFrame()
+        if payload.get("status") == "ERROR":
+            error_msg = (payload.get("error") or "").lower()
+            if "exceeded" in error_msg and attempt == 0:
+                time.sleep(2)
+                continue
+            return pd.DataFrame()
+        results = payload.get("results") or []
+        if not results:
+            if attempt == 0:
+                time.sleep(1)
+                continue
+            return pd.DataFrame()
+        rows = []
+        for item in results:
+            ts = item.get("t")
+            if ts is None:
+                continue
+            dt = datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
+            rows.append(
+                {
+                    "date": dt,
+                    "open": item.get("o"),
+                    "high": item.get("h"),
+                    "low": item.get("l"),
+                    "close": item.get("c"),
+                    "volume": item.get("v"),
+                }
+            )
+        if rows:
+            df = pd.DataFrame(rows).set_index("date").sort_index()
+            df.attrs["source"] = "polygon"
+            return df
+    return pd.DataFrame()
 
 def fetch_finnhub_daily_bars(ticker: str, start: datetime) -> pd.DataFrame:
     api_key = os.getenv("FINNHUB_API_KEY")
     if not api_key:
         return pd.DataFrame()
     url = "https://finnhub.io/api/v1/stock/candle"
-    params = {
-        "symbol": ticker.upper(),
-        "resolution": "D",
-        "from": int(start.replace(tzinfo=timezone.utc).timestamp()),
-        "to": int(datetime.now(timezone.utc).timestamp()),
-        "token": api_key,
-    }
-    try:
-        resp = requests.get(url, params=params, timeout=10)
-        resp.raise_for_status()
-    except Exception:
-        return pd.DataFrame()
-    data = resp.json()
-    if data.get("s") != "ok":
-        return pd.DataFrame()
-    times = data.get("t") or []
-    if not times:
-        return pd.DataFrame()
-    df = pd.DataFrame(
-        {
-            "date": [datetime.fromtimestamp(ts, tz=timezone.utc) for ts in times],
-            "open": data.get("o", []),
-            "high": data.get("h", []),
-            "low": data.get("l", []),
-            "close": data.get("c", []),
-            "volume": data.get("v", []),
+    for symbol in (ticker.upper(), f"US:{ticker.upper()}"):
+        params = {
+            "symbol": symbol,
+            "resolution": "D",
+            "from": int(start.replace(tzinfo=timezone.utc).timestamp()),
+            "to": int(datetime.now(timezone.utc).timestamp()),
+            "token": api_key,
         }
-    )
-    df = df.set_index("date").sort_index()
-    df.attrs["source"] = "finnhub"
-    return df
-
-
+        try:
+            resp = requests.get(url, params=params, timeout=10)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception:
+            data = None
+        if not data or data.get("s") != "ok":
+            continue
+        times = data.get("t") or []
+        if not times:
+            continue
+        df = pd.DataFrame(
+            {
+                "date": [datetime.fromtimestamp(ts, tz=timezone.utc) for ts in times],
+                "open": data.get("o", []),
+                "high": data.get("h", []),
+                "low": data.get("l", []),
+                "close": data.get("c", []),
+                "volume": data.get("v", []),
+            }
+        )
+        df = df.set_index("date").sort_index()
+        df.attrs["source"] = "finnhub"
+        return df
+    return pd.DataFrame()
 
 def get_bars(ticker: str, start: datetime) -> pd.DataFrame:
-    """Fetch daily bars with multiple fallbacks (yfinance → Polygon → Finnhub → synthetic)."""
+    """Fetch daily bars favoring Polygon -> Finnhub -> yfinance -> synthetic."""
+    for fetcher in (fetch_polygon_daily_bars, fetch_finnhub_daily_bars):
+        try:
+            alt = fetcher(ticker, start)
+        except Exception:
+            alt = pd.DataFrame()
+        if alt is not None and not alt.empty:
+            return alt
+
     try:
         import yfinance as yf  # type: ignore
     except ImportError as exc:  # pragma: no cover - surfaced to caller
@@ -306,14 +328,6 @@ def get_bars(ticker: str, start: datetime) -> pd.DataFrame:
             return df
     except Exception:
         pass
-
-    for fetcher in (fetch_polygon_daily_bars, fetch_finnhub_daily_bars):
-        try:
-            alt = fetcher(ticker, start)
-        except Exception:
-            alt = pd.DataFrame()
-        if alt is not None and not alt.empty:
-            return alt
 
     fallback = _mock_bars(ticker)
     fallback.attrs["source"] = "synthetic"

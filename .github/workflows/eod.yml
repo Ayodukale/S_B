@@ -4,7 +4,7 @@ permissions:
 name: EOD Swing Signals
 on:
   schedule:
-    - cron: "05 21 * * 1-5"  # ~5:05pm ET weekdays
+    - cron: "05 21 * * 0-5"  # ~5:05pm ET weekdays
   workflow_dispatch:
 
 jobs:
