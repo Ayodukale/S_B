@@ -168,7 +168,7 @@ AMZN
 ```yaml
 name: EOD Swing Signals
 on:
-  schedule: [{ cron: "05 21 * * 1-5" }]  # ~5:05pm ET, weekdays
+  schedule: [{ cron: "05 21 * * 0-5" }]  # ~5:05pm ET, Sunday through Friday
   workflow_dispatch: {}
 jobs:
   build:
@@ -674,50 +674,42 @@ Sector Focus: Energy, Industrials strong; Tech mixed.
 
 To prevent downtime or incomplete data, the system now supports a **multi-provider hierarchy**.
 
-### Default Order:
-1. **Polygon** → Primary (bars, fundamentals, news)
-2. **Finnhub** → Secondary (bars + earnings calendar)
-3. **yfinance** → Fallback (bars only)
-4. **Synthetic / Mock** → Emergency fallback (pipeline continuity)
+### Default Order
+1. **Polygon** – primary daily bars (with a one retry backoff for rate limits).
+2. **Finnhub** – secondary bars (tries both `TICKER` and `US:TICKER`).
+3. **yfinance** – tertiary fallback if APIs are unavailable.
+4. **Synthetic / Mock** – emergency continuity so the workflow never fails.
 
 ### Fetch Adapter
-The `get_bars()` function routes requests through providers in priority order:
+`get_bars()` always walks that chain: try Polygon, fall back to Finnhub, then yfinance, and finally synthetic. There is no manual toggle—just set the API keys and the adapter handles the rest.
 
 ```python
-PROVIDER = os.getenv("DATA_PROVIDER", "auto")
+def get_bars(ticker: str, start: datetime) -> pd.DataFrame:
+    for fetcher in (fetch_polygon_daily_bars, fetch_finnhub_daily_bars):
+        df = fetcher(ticker, start)
+        if df is not None and not df.empty:
+            return df
 
-def get_bars(tkr, start):
-    if PROVIDER in ("polygon", "auto"):
-        df = fetch_polygon(tkr, start)
-        if df is not None and not df.empty: return df
+    df = fetch_yfinance(ticker, start)  # wrapped download + column flattening
+    if df is not None and not df.empty:
+        return df
 
-    if PROVIDER in ("finnhub", "auto"):
-        df = fetch_finnhub(tkr, start)
-        if df is not None and not df.empty: return df
-
-    if PROVIDER in ("yfinance", "auto"):
-        try:
-            return yf.download(tkr, start=start, progress=False, auto_adjust=True)
-        except Exception:
-            pass
-
-    return _mock_bars(tkr, start)
+    return _mock_bars(ticker)
 ```
 
-This ensures:
-- **High reliability:** at least one provider always responds.
-- **Clean fallback chain:** no single dependency can break the nightly run.
-- **Minimal code churn:** adding/removing providers doesn’t affect strategy logic.
+Key behaviors:
+- Polygon retries once after a short sleep when quota is exceeded.
+- Finnhub probes both ticker symbol formats before failing open.
+- yfinance results are normalized to `open/high/low/close/volume` columns so downstream logic is stable.
 
 ### Environment Config (GitHub Actions / Local)
 
 ```
-DATA_PROVIDER=auto
-POLYGON_API_KEY=your_polygon_key
-FINNHUB_API_KEY=your_finnhub_key
+POLYGON_API_KEY=...
+FINNHUB_API_KEY=...
 ```
 
-> `auto` lets the adapter cascade through Polygon → Finnhub → yfinance automatically.
+No other knobs are required; leave data provider selection in “auto” mode by omission.
 
 ---
 

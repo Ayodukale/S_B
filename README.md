@@ -1,10 +1,11 @@
 # SwingBot
 
-SwingBot is an end-of-day swing trading agent that publishes actionable signals and highlights without requiring a dedicated server. A GitHub Action runs every weekday around 5:05 pm ET, captures market data, generates machine-readable and human-readable outputs, pushes them back to this repository, and optionally notifies Discord. A Custom GPT can read the same published files for conversational access.
+SwingBot is an end-of-day swing trading agent that publishes actionable signals and highlights without requiring a dedicated server. A GitHub Action runs every Sunday–Friday around 5:05 pm ET, captures market data, generates machine-readable and human-readable outputs, pushes them back to this repository, and optionally notifies Discord. A Custom GPT can read the same published files for conversational access.
 
 ## Key Features
 
 - **Dual EMA strategy tracking** – `nine_ema_dual_strategy_bot_v2.py` screens the watchlist, tracks open positions, and enforces risk guardrails (market filter, gap/data sanity checks, low dollar-volume filter, upcoming earnings guard).
+- **Multi-provider market data** – Polygon first, Finnhub second, yfinance third, with synthetic bars as a safety net.
 - **Automated nightly pipeline** – `.github/workflows/eod.yml` installs dependencies, runs the screener, commits updated `data/` artifacts, and posts a Discord embed summarizing the day.
 - **Static publishing** – GitHub Pages hosts `data/signals.json` and `data/highlights.md`, so downstream consumers (Discord, Custom GPT) always see the latest snapshot.
 - **Discord notifications** – `scripts/notify_discord.py` crafts an embed from highlights and recent entries and posts to one or two webhooks. It includes a footer link to the GPT for deep dives.
@@ -44,7 +45,7 @@ SwingBot is an end-of-day swing trading agent that publishes actionable signals 
 
 ## Automation Pipeline
 
-- Scheduled at `05 21 * * 1-5` (5:05 pm ET weekdays).
+- Scheduled at `05 21 * * 0-5` (~5:05 pm ET, Sunday through Friday).
 - Uses Python 3.11 on `ubuntu-latest`.
 - Steps:
   1. Check out code.
