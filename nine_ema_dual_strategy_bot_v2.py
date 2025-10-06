@@ -649,6 +649,11 @@ def run_strategy(args: argparse.Namespace) -> None:
                 notes=existing.notes,
             )
 
+            if position.days_held == 0:
+                position.pct_since_entry = 0.0
+                position.r_peak = 0.0
+                position.highest_close = entry_price
+
             if latest["close"] < latest["ema20"]:
                 position.status = "CLOSED"
                 position.exit_date = latest_date
