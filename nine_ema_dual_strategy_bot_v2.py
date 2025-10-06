@@ -205,7 +205,7 @@ def fetch_polygon_daily_bars(ticker: str, start: datetime) -> pd.DataFrame:
     end_str = datetime.now(timezone.utc).date().strftime("%Y-%m-%d")
     url = f"https://api.polygon.io/v2/aggs/ticker/{ticker.upper()}/range/1/day/{start_str}/{end_str}"
     params = {
-        "adjusted": "true",
+        "adjusted": "false",
         "sort": "asc",
         "limit": 5000,
         "apiKey": api_key,
