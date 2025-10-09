@@ -1,6 +1,6 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AMZN,BASE,OPEN,2025-10-06,113.69,,,9.14,6.06,2,125.87,Entered on buy zone trigger
-AVGO,BASE,OPEN,2025-10-06,127.58,,,-7.91,-3.56,2,117.49,Entered on buy zone trigger
+AMZN,BASE,OPEN,2025-10-06,113.69,,,98.1,23.5,2,225.22,Entered on buy zone trigger
+AVGO,BASE,OPEN,2025-10-06,127.58,,,170.81,21.07,2,345.5,Entered on buy zone trigger
 GOOGL,BASE,OPEN,2025-10-08,136.8,,,0.0,0.0,0,136.8,Entered on buy zone trigger
-META,BASE,OPEN,2025-10-06,124.68,,,9.39,4.98,2,137.62,Entered on buy zone trigger
-TSLA,BASE,OPEN,2025-10-07,115.06,,,1.44,0.86,1,117.22,Entered on buy zone trigger
+META,BASE,OPEN,2025-10-06,124.68,,,-8.96,-4.84,3,115.47,Entered on buy zone trigger
+TSLA,BASE,OPEN,2025-10-07,115.06,,,4.28,3.47,2,123.27,Entered on buy zone trigger

@@ -4,13 +4,11 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-GOOGL [BASE] → ENTERED @ 136.80 | Buy Zone
 
 Open Positions (top):
-META [BASE] 9.39% | R_peak 4.98 | Held 2d
-AMZN [BASE] 9.14% | R_peak 6.06 | Held 2d
-TSLA [BASE] 1.44% | R_peak 0.86 | Held 1d
+AVGO [BASE] 170.81% | R_peak 21.07 | Held 2d
+AMZN [BASE] 98.10% | R_peak 23.50 | Held 2d
+TSLA [BASE] 4.28% | R_peak 3.47 | Held 2d
 GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
-AVGO [BASE] -7.91% | R_peak -3.56 | Held 2d
+META [BASE] -8.96% | R_peak -4.84 | Held 3d
 ```
