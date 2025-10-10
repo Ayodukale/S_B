@@ -1,31 +1,31 @@
 {
   "AAPL": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "MSFT": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "NVDA": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "META": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "TSLA": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "AMD": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "AVGO": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "NFLX": {
     "next_earnings": null,
@@ -33,10 +33,10 @@
   },
   "GOOGL": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   },
   "AMZN": {
     "next_earnings": null,
-    "fetched_at": "2025-10-06"
+    "fetched_at": "2025-10-10"
   }
 }
