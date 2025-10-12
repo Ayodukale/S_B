@@ -2,17 +2,16 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Entries:
-AAPL [BASE] → ENTERED @ 254.04 | Buy Zone
+Entries (suppressed by guards):
+NVDA [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [183.13, 186.04]
 Exits:
-GOOGL [BASE] → EXIT EMA20_break_exit @ 241.53
+AAPL [BASE] → EXIT EMA20_break_exit @ 245.27
 
 Open Positions (top):
-TSLA [BASE] 278.53% | R_peak 16.14 | Held 2d
-AVGO [BASE] 170.43% | R_peak 21.07 | Held 3d
-AMZN [BASE] 22.79% | R_peak 9.85 | Held 4d
-META [BASE] 10.22% | R_peak 5.27 | Held 4d
-AAPL [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMZN [BASE] 12.95% | R_peak 4.81 | Held 4d
+AVGO [BASE] 9.61% | R_peak 3.48 | Held 4d
+TSLA [BASE] 2.40% | R_peak 1.06 | Held 3d
+META [BASE] -6.24% | R_peak -2.68 | Held 4d
 ```
