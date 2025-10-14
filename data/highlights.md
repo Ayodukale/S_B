@@ -2,14 +2,11 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Screening filters triggered:
-AVGO — GAP_FILTER_TRIGGERED (gap 8.7%)
-Exits:
-META [BASE] → EXIT EMA20_break_exit @ 715.70
-AMZN [BASE] → EXIT EMA20_break_exit @ 220.07
+Entries (suppressed by guards):
+TSLA [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [424.34, 432.42]
 
 Open Positions (top):
-TSLA [BASE] 278.85% | R_peak 16.14 | Held 6d
+TSLA [BASE] 273.06% | R_peak 16.14 | Held 7d
 ```
