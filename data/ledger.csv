@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-TSLA,BASE,OPEN,2025-10-07,115.06,,,273.06,16.14,7,438.69,Entered on buy zone trigger
+TSLA,BASE,OPEN,2025-10-07,115.06,,,278.19,16.14,8,438.69,Entered on buy zone trigger
