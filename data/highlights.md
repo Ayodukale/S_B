@@ -2,11 +2,12 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries (suppressed by guards):
-TSLA [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising | Buy Zone [425.69, 432.12]
+Entries:
+NVDA [BASE] → ENTERED @ 183.22 | Buy Zone
 
 Open Positions (top):
-TSLA [BASE] 272.63% | R_peak 16.14 | Held 9d
+TSLA [BASE] 281.81% | R_peak 16.17 | Held 10d
+NVDA [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
