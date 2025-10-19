@@ -4,8 +4,6 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-NVDA [BASE] → ENTERED @ 183.22 | Buy Zone
 
 Open Positions (top):
 TSLA [BASE] 281.81% | R_peak 16.17 | Held 10d
