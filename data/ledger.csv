@@ -1,3 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-NVDA,BASE,OPEN,2025-10-17,183.22,,,0.0,0.0,0,183.22,Entered on buy zone trigger
-TSLA,BASE,OPEN,2025-10-07,115.06,,,281.81,16.17,10,439.31,Entered on buy zone trigger
+TSLA,BASE,OPEN,2025-10-07,115.06,,,288.87,16.57,13,447.43,Entered on buy zone trigger
