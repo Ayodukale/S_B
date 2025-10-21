@@ -1,11 +1,12 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+AVGO [BASE] → ENTERED @ 342.66 | Buy Zone
 Entries (suppressed by guards):
-TSLA [BASE] → Price extended above buy zone | Buy Zone [428.94, 436.33]
-NFLX [BASE] → Price extended above buy zone | Buy Zone [1206.41, 1208.95]
-Exits:
-NVDA [BASE] → EXIT EMA20_break_exit @ 182.64
+TSLA [BASE] → Price extended above buy zone | Buy Zone [430.24, 437.59]
+NFLX [BASE] → Price extended above buy zone | Buy Zone [1209.74, 1215.43]
 
 Open Positions (top):
-TSLA [BASE] 288.87% | R_peak 16.57 | Held 13d
+TSLA [BASE] 284.67% | R_peak 16.57 | Held 14d
+AVGO [BASE] 0.00% | R_peak 0.00 | Held 0d
