@@ -4,14 +4,16 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+MSFT [BASE] → ENTERED @ 525.76 | Buy Zone
 Entries (suppressed by guards):
-AAPL [BASE] → Price extended above buy zone | Buy Zone [258.10, 263.33]
-MSFT [BASE] → Price extended above buy zone | Buy Zone [522.58, 528.66]
-META [BASE] → Price extended above buy zone | Buy Zone [735.19, 739.95]
-GOOGL [BASE] → Price extended above buy zone | Buy Zone [254.48, 261.51]
-AMZN [BASE] → Price extended above buy zone | Buy Zone [222.71, 224.35]
+AAPL [BASE] → Price extended above buy zone | Buy Zone [259.36, 264.94]
+AMZN [BASE] → Earnings 2025-10-30 | Buy Zone [222.72, 224.05]
+Screening filters triggered:
+META — GAP_FILTER_TRIGGERED (gap 11.0%)
 
 Open Positions (top):
-TSLA [BASE] 301.10% | R_peak 17.28 | Held 22d
-AVGO [BASE] 12.11% | R_peak 2.92 | Held 6d
+TSLA [BASE] 282.50% | R_peak 17.28 | Held 23d
+AVGO [BASE] 9.35% | R_peak 2.92 | Held 7d
+MSFT [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```

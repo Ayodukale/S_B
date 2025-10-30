@@ -1,3 +1,4 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AVGO,BASE,OPEN,2025-10-23,344.29,,,12.11,2.92,6,385.98,Entered on buy zone trigger
-TSLA,BASE,OPEN,2025-10-07,115.06,,,301.1,17.28,22,461.51,Entered on buy zone trigger
+AVGO,BASE,OPEN,2025-10-23,344.29,,,9.35,2.92,7,385.98,Entered on buy zone trigger
+MSFT,BASE,OPEN,2025-10-30,525.76,,,0.0,0.0,0,525.76,Entered on buy zone trigger
+TSLA,BASE,OPEN,2025-10-07,115.06,,,282.5,17.28,23,461.51,Entered on buy zone trigger
