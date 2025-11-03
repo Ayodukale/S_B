@@ -1,8 +1,9 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-10-31,AAPL,BASE,True,WAIT_FOR_PULLBACK,260.41,266.03,False,270.37,266.03,260.41,5.39,86167123,47831776,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-10-31,MSFT,BASE,True,EXIT_CANDIDATE,522.4,526.03,False,517.81,526.03,522.4,9.88,34006324,20473966,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
-2025-10-31,NVDA,BASE,True,WAIT_FOR_PULLBACK,190.14,195.75,False,202.49,195.75,190.14,6.13,179798344,179135809,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-10-31,TSLA,BASE,True,WAIT_FOR_PULLBACK,441.18,448.81,True,456.56,448.81,441.18,18.15,83135787,83185250,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-10-31,AMD,BASE,True,WAIT_FOR_PULLBACK,233.39,250.25,True,256.12,250.25,233.39,11.02,34449175,81082861,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2025-11-04
-2025-10-31,AVGO,BASE,True,WAIT_FOR_PULLBACK,355.46,365.0,False,369.63,365.0,355.46,12.5,21598433,21492328,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-10-31,GOOGL,BASE,True,WAIT_FOR_PULLBACK,259.35,268.64,False,281.19,268.64,259.35,7.88,39267645,32109191,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,AAPL,BASE,True,WAIT_FOR_PULLBACK,261.23,266.63,False,269.05,266.63,261.23,5.43,48195237,48008332,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,MSFT,BASE,True,EXIT_CANDIDATE,521.89,524.23,False,517.03,524.23,521.89,9.96,22291414,20519108,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,NVDA,BASE,True,WAIT_FOR_PULLBACK,191.73,197.97,True,206.88,197.97,191.73,6.15,177364603,180120134,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,TSLA,BASE,True,WAIT_FOR_PULLBACK,443.77,452.73,True,468.37,452.73,443.77,18.31,83886826,83113348,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,AMD,BASE,True,WAIT_FOR_PULLBACK,235.89,252.13,True,259.65,252.13,235.89,10.88,35925678,70436166,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2025-11-04
+2025-11-03,AVGO,BASE,True,BUY_ZONE_TRIGGERED,356.14,364.51,False,362.55,364.51,356.14,12.2,15604723,21349277,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,GOOGL,BASE,True,WAIT_FOR_PULLBACK,261.67,271.66,True,283.72,271.66,261.67,7.82,28581520,32093534,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-03,AMZN,BASE,True,WAIT_FOR_PULLBACK,227.55,233.27,True,254.0,233.27,227.55,7.31,92452015,55840272,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
