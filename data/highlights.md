@@ -5,9 +5,10 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries (suppressed by guards):
-AMD [BASE] → Price extended above buy zone | Buy Zone [235.89, 252.13]
+AMD [BASE] → Earnings 2025-11-04 | Buy Zone [237.24, 251.72]
+Exits:
+AVGO [BASE] → EXIT EMA20_break_exit @ 351.94
 
 Open Positions (top):
-TSLA [BASE] 307.07% | R_peak 17.62 | Held 27d
-AVGO [BASE] 5.30% | R_peak 2.92 | Held 11d
+TSLA [BASE] 286.11% | R_peak 17.62 | Held 28d
 ```
