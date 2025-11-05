@@ -4,11 +4,12 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries (suppressed by guards):
-AMD [BASE] → Earnings 2025-11-04 | Buy Zone [237.24, 251.72]
-Exits:
-AVGO [BASE] → EXIT EMA20_break_exit @ 351.94
+Entries:
+NVDA [BASE] → ENTERED @ 195.21 | Buy Zone
+AVGO [BASE] → ENTERED @ 358.98 | Buy Zone
 
 Open Positions (top):
-TSLA [BASE] 286.11% | R_peak 17.62 | Held 28d
+TSLA [BASE] 301.59% | R_peak 17.62 | Held 29d
+NVDA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AVGO [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
