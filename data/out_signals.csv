@@ -1,8 +1,8 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-11-05,AAPL,BASE,True,WAIT_FOR_PULLBACK,262.84,267.88,True,270.14,267.88,262.84,5.43,42538525,49276153,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-05,NVDA,BASE,True,BUY_ZONE_TRIGGERED,192.66,197.53,False,195.21,197.53,192.66,6.58,166530482,184523589,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-05,TSLA,BASE,True,WAIT_FOR_PULLBACK,445.55,453.24,True,462.07,453.24,445.55,19.61,84887879,83106548,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-05,AMD,BASE,True,WAIT_FOR_PULLBACK,239.06,252.64,True,256.33,252.64,239.06,10.8,67030774,62847003,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2025-11-04
-2025-11-05,AVGO,BASE,True,BUY_ZONE_TRIGGERED,356.05,361.39,True,358.98,361.39,356.05,12.46,17006374,21503424,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-05,GOOGL,BASE,True,WAIT_FOR_PULLBACK,265.19,275.13,True,284.31,275.13,265.19,8.03,30277595,32947137,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-05,AMZN,BASE,True,WAIT_FOR_PULLBACK,231.58,239.22,True,250.2,239.22,231.58,7.48,39134353,56657557,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-06,AAPL,BASE,True,WAIT_FOR_PULLBACK,263.5,268.26,False,269.77,268.26,263.5,5.39,49179066,49876228,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,NVDA,BASE,True,EXIT_CANDIDATE,192.23,195.64,False,188.08,195.64,192.23,7.08,219546029,186591944,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,TSLA,BASE,True,MARKET_FILTER_ACTIVE,445.59,451.77,False,445.91,451.77,445.59,20.64,102760226,84811808,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,AMD,BASE,True,EXIT_CANDIDATE,238.93,249.65,False,237.7,249.65,238.93,11.74,65525675,61425524,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,AVGO,BASE,True,EXIT_CANDIDATE,356.0,360.23,False,355.59,360.23,356.0,12.28,19607246,21605660,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,GOOGL,BASE,True,WAIT_FOR_PULLBACK,267.06,277.05,True,284.75,277.05,267.06,8.09,35352736,33356795,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-06,AMZN,BASE,True,WAIT_FOR_PULLBACK,232.68,239.99,False,243.04,239.99,232.68,7.8,44790460,56650287,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
