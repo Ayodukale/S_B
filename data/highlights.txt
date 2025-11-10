@@ -1,4 +1,10 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-No active positions. Review watchlist tomorrow.
+Entries:
+TSLA [BASE] → ENTERED @ 445.23 | Buy Zone
+AMD [BASE] → ENTERED @ 243.98 | Buy Zone
+
+Open Positions (top):
+TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMD [BASE] 0.00% | R_peak 0.00 | Held 0d
