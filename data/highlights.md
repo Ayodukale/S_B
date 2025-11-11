@@ -5,10 +5,11 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries:
-TSLA [BASE] → ENTERED @ 445.23 | Buy Zone
-AMD [BASE] → ENTERED @ 243.98 | Buy Zone
+NVDA [BASE] → ENTERED @ 193.16 | Buy Zone
+Exits:
+TSLA [BASE] → EXIT EMA20_break_exit @ 439.62
+AMD [BASE] → EXIT EMA20_break_exit @ 237.52
 
 Open Positions (top):
-TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
-AMD [BASE] 0.00% | R_peak 0.00 | Held 0d
+NVDA [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
