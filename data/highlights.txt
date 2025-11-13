@@ -1,6 +1,8 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-
-Open Positions (top):
-NVDA [BASE] 0.33% | R_peak 0.08 | Held 1d
+Entries (suppressed by guards):
+GOOGL [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [274.11, 282.21]
+AMZN [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [237.27, 242.57]
+Exits:
+NVDA [BASE] → EXIT EMA20_break_exit @ 186.86

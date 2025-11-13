@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-11-12,AAPL,BASE,True,WAIT_FOR_PULLBACK,266.28,270.59,False,273.47,270.59,266.28,5.15,47998114,50688758,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-12,NVDA,BASE,True,BUY_ZONE_TRIGGERED,192.7,194.55,True,193.8,194.55,192.7,8.32,153519244,184337967,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-12,AMD,BASE,True,WAIT_FOR_PULLBACK,240.72,247.18,True,258.89,247.18,240.72,13.71,108055619,56624634,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-12,AVGO,BASE,True,EXIT_CANDIDATE,355.3,356.56,True,355.22,356.56,355.3,13.06,12117573,18917870,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
-2025-11-12,GOOGL,BASE,True,WAIT_FOR_PULLBACK,273.64,283.12,False,286.71,283.12,273.64,8.63,24651332,33509628,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-11-12,AMZN,BASE,True,WAIT_FOR_PULLBACK,237.24,243.82,False,244.2,243.82,237.24,8.05,30496513,53468925,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-11-13,AAPL,BASE,True,WAIT_FOR_PULLBACK,266.91,271.06,False,272.95,271.06,266.91,5.13,46558025,51047693,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-13,NVDA,BASE,True,EXIT_CANDIDATE,192.14,193.01,False,186.86,193.01,192.14,8.65,205944137,185719453,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-13,AMD,BASE,True,WAIT_FOR_PULLBACK,241.41,247.34,False,247.96,247.34,241.41,13.37,62534192,56309295,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-13,GOOGL,BASE,True,MARKET_FILTER_ACTIVE,274.11,282.21,False,278.57,282.21,274.11,8.69,29162193,33576800,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-11-13,AMZN,BASE,True,MARKET_FILTER_ACTIVE,237.27,242.57,False,237.58,242.57,237.27,8.29,41023538,53434050,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,

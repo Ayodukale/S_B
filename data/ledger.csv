@@ -1,2 +1,1 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-NVDA,BASE,OPEN,2025-11-11,193.16,,,0.33,0.08,1,193.8,Entered on buy zone trigger
