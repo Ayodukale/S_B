@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-21T21:26:44+00:00",
+  "generated_at_utc": "2025-11-23T21:26:17+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,8 +15,8 @@
       "ema9": 269.48,
       "ema20": 267.81,
       "atr14": 5.96,
-      "vol": 58285259,
-      "vol20": 50203504,
+      "vol": 58923249,
+      "vol20": 50235404,
       "notes": "Price extended above buy zone",
       "market_ok": false,
       "market_reason": "SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising",
@@ -35,8 +35,8 @@
       "ema9": 288.28,
       "ema20": 280.87,
       "atr14": 11.1,
-      "vol": 73057682,
-      "vol20": 41285270,
+      "vol": 74137472,
+      "vol20": 41339259,
       "notes": "Price extended above buy zone",
       "market_ok": false,
       "market_reason": "SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising",
