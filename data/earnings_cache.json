@@ -1,7 +1,7 @@
 {
   "AAPL": {
     "next_earnings": null,
-    "fetched_at": "2025-11-25"
+    "fetched_at": "2025-11-30"
   },
   "MSFT": {
     "next_earnings": null,
@@ -25,7 +25,7 @@
   },
   "AVGO": {
     "next_earnings": null,
-    "fetched_at": "2025-11-25"
+    "fetched_at": "2025-11-30"
   },
   "NFLX": {
     "next_earnings": "2025-10-21",
@@ -33,7 +33,7 @@
   },
   "GOOGL": {
     "next_earnings": null,
-    "fetched_at": "2025-11-25"
+    "fetched_at": "2025-11-30"
   },
   "AMZN": {
     "next_earnings": null,
