@@ -1,7 +1,7 @@
 {
   "AAPL": {
     "next_earnings": null,
-    "fetched_at": "2025-11-30"
+    "fetched_at": "2025-12-04"
   },
   "MSFT": {
     "next_earnings": null,
@@ -12,8 +12,8 @@
     "fetched_at": "2025-11-10"
   },
   "META": {
-    "next_earnings": "2025-10-29",
-    "fetched_at": "2025-10-27"
+    "next_earnings": null,
+    "fetched_at": "2025-12-04"
   },
   "TSLA": {
     "next_earnings": null,
@@ -24,8 +24,8 @@
     "fetched_at": "2025-11-10"
   },
   "AVGO": {
-    "next_earnings": null,
-    "fetched_at": "2025-11-30"
+    "next_earnings": "2025-12-11",
+    "fetched_at": "2025-12-04"
   },
   "NFLX": {
     "next_earnings": "2025-10-21",
@@ -33,7 +33,7 @@
   },
   "GOOGL": {
     "next_earnings": null,
-    "fetched_at": "2025-11-30"
+    "fetched_at": "2025-12-04"
   },
   "AMZN": {
     "next_earnings": null,
