@@ -4,8 +4,6 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-AAPL [BASE] → ENTERED @ 278.78 | Buy Zone
 
 Open Positions (top):
 AAPL [BASE] 0.00% | R_peak 0.00 | Held 0d
