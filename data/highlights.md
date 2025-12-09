@@ -4,10 +4,10 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-GOOGL [BASE] → ENTERED @ 313.72 | Buy Zone
+Entries (suppressed by guards):
+AVGO [BASE] → Price extended above buy zone | Buy Zone [377.51, 389.32]
 
 Open Positions (top):
-GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
-AAPL [BASE] -0.32% | R_peak 0.00 | Held 3d
+GOOGL [BASE] 1.07% | R_peak 0.31 | Held 1d
+AAPL [BASE] -0.57% | R_peak 0.00 | Held 4d
 ```
