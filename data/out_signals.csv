@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-12-11,AAPL,BASE,True,BUY_ZONE_TRIGGERED,276.28,278.59,False,278.03,278.59,276.28,4.79,32052389,43436236,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-11,META,BASE,True,WAIT_FOR_PULLBACK,646.19,651.24,True,652.71,651.24,646.19,15.57,13100817,18408342,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-11,TSLA,BASE,True,WAIT_FOR_PULLBACK,435.96,442.62,False,446.89,442.62,435.96,14.28,54915908,77647879,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-11,AVGO,BASE,True,WAIT_FOR_PULLBACK,383.32,396.51,False,406.37,396.51,383.32,15.91,37622561,25650109,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2025-12-11
-2025-12-11,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,307.56,315.38,False,312.43,315.38,307.56,9.28,39190521,46708226,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-12-12,AAPL,BASE,True,MARKET_FILTER_ACTIVE,276.47,278.53,True,278.28,278.53,276.47,4.42,38662947,42945864,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-12,META,BASE,True,EXIT_CANDIDATE,646.0,649.84,False,644.23,649.84,646.0,19.58,13542084,18034228,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-12,TSLA,BASE,True,WAIT_FOR_PULLBACK,438.15,445.89,True,458.96,445.89,438.15,14.45,94683805,76484057,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-12,AVGO,BASE,True,EXIT_CANDIDATE,381.09,389.2,False,359.93,389.2,381.09,18.37,93361415,29589991,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-12,GOOGL,BASE,True,MARKET_FILTER_ACTIVE,307.72,314.16,False,309.29,314.16,307.72,8.92,33946334,47078785,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
