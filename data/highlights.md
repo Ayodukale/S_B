@@ -5,10 +5,11 @@
 Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
 Entries (suppressed by guards):
-AAPL [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [276.47, 278.53]
-GOOGL [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [307.72, 314.16]
+META [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [646.15, 649.37]
+GOOGL [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [307.77, 312.98]
+Exits:
+AAPL [BASE] → EXIT EMA20_break_exit @ 274.11
 
 Open Positions (top):
-AAPL [BASE] -0.18% | R_peak 0.00 | Held 7d
-GOOGL [BASE] -1.41% | R_peak 0.60 | Held 4d
+GOOGL [BASE] -1.75% | R_peak 0.60 | Held 7d
 ```
