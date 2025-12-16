@@ -1,6 +1,5 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-12-15,AAPL,BASE,True,EXIT_CANDIDATE,276.25,277.65,False,274.11,277.65,276.25,4.51,49683489,43101963,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-15,META,BASE,True,MARKET_FILTER_ACTIVE,646.15,649.37,True,647.51,649.37,646.15,19.0,15178371,17780681,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-15,TSLA,BASE,True,WAIT_FOR_PULLBACK,441.69,451.77,True,475.31,451.77,441.69,13.89,113391018,76920750,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-15,AVGO,BASE,True,EXIT_CANDIDATE,377.16,379.32,False,339.81,379.32,377.16,17.14,65327277,32042657,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-15,GOOGL,BASE,True,MARKET_FILTER_ACTIVE,307.77,312.98,False,308.22,312.98,307.77,7.97,29120664,47052159,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-16,AAPL,BASE,True,EXIT_CANDIDATE,276.09,277.04,True,274.61,277.04,276.09,4.4,37165129,42748561,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-16,META,BASE,True,WAIT_FOR_PULLBACK,647.19,650.93,True,657.15,650.93,647.19,18.66,14133014,17680786,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-16,TSLA,BASE,True,WAIT_FOR_PULLBACK,446.28,459.39,True,489.88,459.39,446.28,14.69,104701639,77092410,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-16,GOOGL,BASE,True,EXIT_CANDIDATE,307.65,311.69,False,306.57,311.69,307.65,7.75,30459704,45943204,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
