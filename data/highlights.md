@@ -4,6 +4,6 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Exits:
-GOOGL [BASE] → EXIT EMA20_break_exit @ 306.57
+Entries (suppressed by guards):
+META [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [647.41, 650.64]
 ```
