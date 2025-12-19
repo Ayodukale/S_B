@@ -1,4 +1,5 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-12-18,META,BASE,True,WAIT_FOR_PULLBACK,649.04,653.4,True,664.45,653.4,649.04,19.52,19055650,16910025,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-18,TSLA,BASE,True,WAIT_FOR_PULLBACK,451.62,465.45,True,483.37,465.45,451.62,17.25,93948901,79610656,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2025-12-18,GOOGL,BASE,True,EXIT_CANDIDATE,306.22,307.45,True,302.46,307.45,306.22,7.86,32132494,43884718,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-19,MSFT,BASE,True,BUY_ZONE_TRIGGERED,115.67,116.97,False,116.04,116.97,115.67,2.15,1223399,1430990,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
+2025-12-19,META,BASE,True,WAIT_FOR_PULLBACK,649.96,654.48,False,658.77,654.48,649.96,19.7,49449764,18412599,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2025-12-19,TSLA,BASE,True,WAIT_FOR_PULLBACK,454.44,468.6,False,481.2,468.6,454.44,17.78,99250185,78952813,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2025-12-19,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,306.31,307.39,True,307.16,307.39,306.31,7.85,59248761,43815186,Price inside EMA buy zone,,market_check_skipped: synthetic_data,

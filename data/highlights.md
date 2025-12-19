@@ -2,7 +2,13 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ℹ️ market_check_skipped: synthetic_data
 
-No active positions. Review watchlist tomorrow.
+Entries:
+MSFT [BASE] → ENTERED @ 116.04 | Buy Zone
+GOOGL [BASE] → ENTERED @ 307.16 | Buy Zone
+
+Open Positions (top):
+MSFT [BASE] 0.00% | R_peak 0.00 | Held 0d
+GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
