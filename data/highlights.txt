@@ -1,9 +1,6 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ℹ️ market_check_skipped: synthetic_data
+Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-MSFT [BASE] → ENTERED @ 116.04 | Buy Zone
-GOOGL [BASE] → ENTERED @ 307.16 | Buy Zone
 
 Open Positions (top):
 MSFT [BASE] 0.00% | R_peak 0.00 | Held 0d

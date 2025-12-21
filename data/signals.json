@@ -1,27 +1,7 @@
 {
-  "generated_at_utc": "2025-12-19T21:29:08+00:00",
+  "generated_at_utc": "2025-12-21T21:26:57+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
-    {
-      "date": "2025-12-19",
-      "ticker": "MSFT",
-      "strategy": "BASE",
-      "setup": true,
-      "action": "BUY_ZONE_TRIGGERED",
-      "buy_zone_low": 115.67,
-      "buy_zone_high": 116.97,
-      "confirm_today": false,
-      "close": 116.04,
-      "ema9": 116.97,
-      "ema20": 115.67,
-      "atr14": 2.15,
-      "vol": 1223399,
-      "vol20": 1430990,
-      "notes": "Price inside EMA buy zone",
-      "market_ok": null,
-      "market_reason": "market_check_skipped: synthetic_data",
-      "next_earnings": null
-    },
     {
       "date": "2025-12-19",
       "ticker": "META",
@@ -35,11 +15,11 @@
       "ema9": 654.48,
       "ema20": 649.96,
       "atr14": 19.7,
-      "vol": 49449764,
-      "vol20": 18412599,
+      "vol": 49977051,
+      "vol20": 18438964,
       "notes": "Price extended above buy zone",
-      "market_ok": null,
-      "market_reason": "market_check_skipped: synthetic_data",
+      "market_ok": true,
+      "market_reason": "market_ok: SPY & QQQ in uptrend",
       "next_earnings": null
     },
     {
@@ -55,11 +35,11 @@
       "ema9": 468.6,
       "ema20": 454.44,
       "atr14": 17.78,
-      "vol": 99250185,
-      "vol20": 78952813,
+      "vol": 103146024,
+      "vol20": 79147605,
       "notes": "Price extended above buy zone",
-      "market_ok": null,
-      "market_reason": "market_check_skipped: synthetic_data",
+      "market_ok": true,
+      "market_reason": "market_ok: SPY & QQQ in uptrend",
       "next_earnings": null
     },
     {
@@ -75,11 +55,11 @@
       "ema9": 307.39,
       "ema20": 306.31,
       "atr14": 7.85,
-      "vol": 59248761,
-      "vol20": 43815186,
+      "vol": 59943218,
+      "vol20": 43849909,
       "notes": "Price inside EMA buy zone",
-      "market_ok": null,
-      "market_reason": "market_check_skipped: synthetic_data",
+      "market_ok": true,
+      "market_reason": "market_ok: SPY & QQQ in uptrend",
       "next_earnings": null
     }
   ],

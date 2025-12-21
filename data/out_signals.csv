@@ -1,5 +1,4 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-12-19,MSFT,BASE,True,BUY_ZONE_TRIGGERED,115.67,116.97,False,116.04,116.97,115.67,2.15,1223399,1430990,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
-2025-12-19,META,BASE,True,WAIT_FOR_PULLBACK,649.96,654.48,False,658.77,654.48,649.96,19.7,49449764,18412599,Price extended above buy zone,,market_check_skipped: synthetic_data,
-2025-12-19,TSLA,BASE,True,WAIT_FOR_PULLBACK,454.44,468.6,False,481.2,468.6,454.44,17.78,99250185,78952813,Price extended above buy zone,,market_check_skipped: synthetic_data,
-2025-12-19,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,306.31,307.39,True,307.16,307.39,306.31,7.85,59248761,43815186,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
+2025-12-19,META,BASE,True,WAIT_FOR_PULLBACK,649.96,654.48,False,658.77,654.48,649.96,19.7,49977051,18438964,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-12-19,TSLA,BASE,True,WAIT_FOR_PULLBACK,454.44,468.6,False,481.2,468.6,454.44,17.78,103146024,79147605,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-12-19,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,306.31,307.39,True,307.16,307.39,306.31,7.85,59943218,43849909,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
