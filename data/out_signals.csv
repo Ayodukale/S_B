@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2025-12-30,NVDA,BASE,True,WAIT_FOR_PULLBACK,183.79,185.51,False,187.54,185.51,183.79,4.95,96744898,165715611,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-30,META,BASE,True,WAIT_FOR_PULLBACK,656.14,661.23,True,665.95,661.23,656.14,17.25,9273208,15718663,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-30,TSLA,BASE,True,EXIT_CANDIDATE,462.65,469.6,False,454.43,469.6,462.65,17.45,58490286,76350132,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
-2025-12-30,GOOGL,BASE,True,WAIT_FOR_PULLBACK,309.47,311.87,True,313.85,311.87,309.47,6.64,17114150,31006505,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2025-12-30,AMZN,BASE,True,WAIT_FOR_PULLBACK,229.66,230.48,True,232.53,230.48,229.66,3.74,21541091,36006086,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2025-12-31,NVDA,BASE,True,WAIT_FOR_PULLBACK,184.05,185.71,False,186.5,185.71,184.05,5.0,118599763,162578083,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-31,META,BASE,True,MARKET_FILTER_ACTIVE,656.52,661.0,False,660.09,661.0,656.52,16.75,7847165,15537178,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-31,TSLA,BASE,True,EXIT_CANDIDATE,461.42,465.63,False,449.72,465.63,461.42,17.02,48637949,75356519,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-31,GOOGL,BASE,True,WAIT_FOR_PULLBACK,309.81,312.09,False,313.0,312.09,309.81,6.39,15890501,30021620,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2025-12-31,AMZN,BASE,True,WAIT_FOR_PULLBACK,229.77,230.55,False,230.82,230.55,229.77,3.62,23788619,34924406,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
