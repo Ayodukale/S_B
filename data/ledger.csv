@@ -1,3 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-GOOGL,BASE,OPEN,2025-12-19,307.16,,,1.9,0.92,12,314.35,Entered on buy zone trigger
-META,BASE,OPEN,2025-12-29,658.69,,,0.21,0.42,2,665.95,Entered on buy zone trigger
+GOOGL,BASE,OPEN,2025-12-19,307.16,,,2.6,1.02,14,315.15,Entered on buy zone trigger
