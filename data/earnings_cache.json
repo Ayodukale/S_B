@@ -9,11 +9,11 @@
   },
   "NVDA": {
     "next_earnings": null,
-    "fetched_at": "2025-12-28"
+    "fetched_at": "2026-01-05"
   },
   "META": {
     "next_earnings": null,
-    "fetched_at": "2025-12-28"
+    "fetched_at": "2026-01-05"
   },
   "TSLA": {
     "next_earnings": null,
@@ -21,7 +21,7 @@
   },
   "AMD": {
     "next_earnings": null,
-    "fetched_at": "2025-11-10"
+    "fetched_at": "2026-01-05"
   },
   "AVGO": {
     "next_earnings": "2025-12-11",
@@ -33,10 +33,10 @@
   },
   "GOOGL": {
     "next_earnings": null,
-    "fetched_at": "2025-12-28"
+    "fetched_at": "2026-01-05"
   },
   "AMZN": {
     "next_earnings": null,
-    "fetched_at": "2025-12-30"
+    "fetched_at": "2026-01-05"
   }
 }
