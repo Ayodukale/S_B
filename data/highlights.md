@@ -4,9 +4,7 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Exits:
-META [BASE] → EXIT EMA20_break_exit @ 648.69
 
 Open Positions (top):
-GOOGL [BASE] 4.82% | R_peak 1.89 | Held 19d
+GOOGL [BASE] 5.95% | R_peak 2.33 | Held 20d
 ```
