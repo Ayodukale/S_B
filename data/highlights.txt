@@ -1,6 +1,6 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
+Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
 
 Open Positions (top):
-GOOGL [BASE] 6.97% | R_peak 2.73 | Held 21d
+GOOGL [BASE] 8.04% | R_peak 3.14 | Held 24d
