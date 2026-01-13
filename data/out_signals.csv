@@ -1,4 +1,4 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-01-12,NVDA,BASE,True,EXIT_CANDIDATE,185.33,186.13,True,184.94,186.13,185.33,4.6,135630842,159179400,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-01-12,GOOGL,BASE,True,WAIT_FOR_PULLBACK,316.56,322.04,True,331.86,322.04,316.56,6.31,33643844,28981270,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-01-12,AMZN,BASE,True,WAIT_FOR_PULLBACK,235.73,240.37,False,246.47,240.37,235.73,4.72,35007951,38128619,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-01-13,NVDA,BASE,True,MARKET_FILTER_ACTIVE,185.37,186.07,True,185.81,186.07,185.37,4.71,156954611,156939392,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-01-13,GOOGL,BASE,True,WAIT_FOR_PULLBACK,318.41,324.83,True,335.97,324.83,318.41,6.58,33340954,28866988,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-01-13,AMZN,BASE,True,WAIT_FOR_PULLBACK,236.39,240.82,False,242.6,240.82,236.39,5.05,38005270,38286398,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
