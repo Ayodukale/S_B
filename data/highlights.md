@@ -4,6 +4,5 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Exits:
-GOOGL [BASE] → EXIT EMA20_break_exit @ 322.00
+No active positions. Review watchlist tomorrow.
 ```
