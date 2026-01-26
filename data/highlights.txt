@@ -3,4 +3,4 @@ Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 
 Open Positions (top):
-GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
+GOOGL [BASE] 1.63% | R_peak 0.66 | Held 3d
