@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-GOOGL,BASE,OPEN,2026-01-23,327.93,,,1.63,0.66,3,333.26,Entered on buy zone trigger
+GOOGL,BASE,OPEN,2026-01-23,327.93,,,2.02,0.82,4,334.55,Entered on buy zone trigger
