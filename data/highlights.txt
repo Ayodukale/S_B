@@ -2,7 +2,7 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries (suppressed by guards):
-META [BASE] → Price extended above buy zone | Buy Zone [645.78, 648.78]
+META [BASE] → Price extended above buy zone | Buy Zone [647.96, 652.77]
 
 Open Positions (top):
-GOOGL [BASE] 2.02% | R_peak 0.82 | Held 4d
+GOOGL [BASE] 2.46% | R_peak 1.00 | Held 5d
