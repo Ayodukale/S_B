@@ -2,12 +2,12 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
+Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Screening filters triggered:
-MSFT — GAP_FILTER_TRIGGERED (gap 8.6%)
-META — GAP_FILTER_TRIGGERED (gap 10.3%)
+Entries (suppressed by guards):
+AMD [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [236.10, 244.58]
+AMZN [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [238.11, 239.79]
 
 Open Positions (top):
-GOOGL [BASE] 3.15% | R_peak 1.28 | Held 6d
+GOOGL [BASE] 3.07% | R_peak 1.28 | Held 7d
 ```
