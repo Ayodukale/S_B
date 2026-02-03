@@ -1,9 +1,9 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
 Entries (suppressed by guards):
-AMD [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [236.10, 244.58]
-AMZN [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [238.11, 239.79]
+AMD [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [237.55, 244.36]
+AMZN [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [238.58, 240.06]
 
 Open Positions (top):
-GOOGL [BASE] 3.07% | R_peak 1.28 | Held 7d
+GOOGL [BASE] 3.59% | R_peak 1.95 | Held 11d
