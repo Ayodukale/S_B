@@ -4,7 +4,5 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Screening filters triggered:
-AMZN — GAP_FILTER_TRIGGERED (gap 9.0%)
 No active positions. Review watchlist tomorrow.
 ```
