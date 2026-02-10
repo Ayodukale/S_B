@@ -1,4 +1,3 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-02-09,AAPL,BASE,True,WAIT_FOR_PULLBACK,265.79,270.02,False,274.62,270.02,265.79,6.54,44355755,57104711,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-02-09,META,BASE,True,WAIT_FOR_PULLBACK,669.15,676.58,True,677.22,676.58,669.15,27.05,14769629,19315089,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-02-09,GOOGL,BASE,True,EXIT_CANDIDATE,329.88,330.88,True,324.32,330.88,329.88,10.9,39202204,37893720,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-02-10,AAPL,BASE,True,WAIT_FOR_PULLBACK,266.54,270.75,False,273.68,270.75,266.54,6.26,32075724,56458550,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-02-10,META,BASE,True,MARKET_FILTER_ACTIVE,669.3,675.41,False,670.72,675.41,669.3,26.53,9684142,19062743,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
