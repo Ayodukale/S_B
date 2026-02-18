@@ -1,3 +1,3 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-02-17,AAPL,BASE,True,EXIT_CANDIDATE,265.62,266.31,True,263.88,266.31,265.62,7.43,58087539,59079006,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-02-17,NVDA,BASE,True,EXIT_CANDIDATE,185.29,185.35,True,184.97,185.35,185.29,7.26,160561922,173932141,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-02-18,AAPL,BASE,True,EXIT_CANDIDATE,265.5,265.92,True,264.35,265.92,265.5,7.44,33584248,56765717,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-02-18,NVDA,BASE,True,WAIT_FOR_PULLBACK,185.54,185.87,True,187.98,185.87,185.54,7.37,160092002,170854298,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
