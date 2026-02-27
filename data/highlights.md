@@ -2,7 +2,9 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
+Screening filters triggered:
+NFLX — GAP_FILTER_TRIGGERED (gap 11.5%)
 No active positions. Review watchlist tomorrow.
 ```
