@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-06T21:39:41+00:00",
+  "generated_at_utc": "2026-03-08T21:34:46+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,8 +15,8 @@
       "ema9": 93.57,
       "ema20": 89.26,
       "atr14": 3.58,
-      "vol": 40792828,
-      "vol20": 56501450,
+      "vol": 41196294,
+      "vol20": 56521623,
       "notes": "Price extended above buy zone",
       "market_ok": false,
       "market_reason": "SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising",
