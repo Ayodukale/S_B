@@ -1,3 +1,2 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-03-16,AVGO,BASE,True,EXIT_CANDIDATE,330.41,330.55,True,324.92,330.55,330.41,14.04,31181687,27091119,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-03-16,NFLX,BASE,True,WAIT_FOR_PULLBACK,92.15,94.99,False,95.2,94.99,92.15,3.36,35805184,53265085,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-03-17,NFLX,BASE,True,MARKET_FILTER_ACTIVE,92.36,94.87,False,94.36,94.87,92.36,3.16,26380926,52787883,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
