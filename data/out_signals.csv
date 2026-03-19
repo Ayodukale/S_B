@@ -1,2 +1,2 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-03-18,NFLX,BASE,True,MARKET_FILTER_ACTIVE,92.59,94.83,True,94.7,94.83,92.59,3.01,27808602,52641282,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-03-19,NFLX,BASE,True,EXIT_CANDIDATE,92.5,94.21,False,91.74,94.21,92.5,2.5,40035698,53139205,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
