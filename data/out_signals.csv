@@ -1,3 +1,2 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-03-27,AMD,BASE,True,EXIT_CANDIDATE,203.84,204.41,False,201.99,204.41,203.84,8.47,29206578,33375036,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-03-27,NFLX,BASE,True,WAIT_FOR_PULLBACK,92.55,93.1,True,93.43,93.1,92.55,2.49,44590673,43100057,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-03-30,NFLX,BASE,True,MARKET_FILTER_ACTIVE,92.59,93.08,False,92.97,93.08,92.59,2.49,31359093,40672244,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
