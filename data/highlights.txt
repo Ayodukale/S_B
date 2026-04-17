@@ -1,4 +1,6 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Screening filters triggered:
+NFLX — GAP_FILTER_TRIGGERED (gap 10.6%)
 No active positions. Review watchlist tomorrow.
