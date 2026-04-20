@@ -1,6 +1,5 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Screening filters triggered:
-NFLX — GAP_FILTER_TRIGGERED (gap 10.6%)
-No active positions. Review watchlist tomorrow.
+Entries (suppressed by guards):
+TSLA [BASE] → Price extended above buy zone | Buy Zone [375.45, 378.62]
