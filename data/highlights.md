@@ -4,6 +4,9 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries (suppressed by guards):
-TSLA [BASE] → Price extended above buy zone | Buy Zone [377.54, 381.65]
+Entries:
+META [BASE] → ENTERED @ 659.15 | Buy Zone
+
+Open Positions (top):
+META [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
