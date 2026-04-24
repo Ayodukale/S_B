@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-META,BASE,OPEN,2026-04-23,659.15,,,0.0,0.0,0,659.15,Entered on buy zone trigger
+META,BASE,OPEN,2026-04-23,659.15,,,2.41,0.85,1,675.03,Entered on buy zone trigger

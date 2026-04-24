@@ -4,9 +4,9 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-META [BASE] → ENTERED @ 659.15 | Buy Zone
+Screening filters triggered:
+AMD — GAP_FILTER_TRIGGERED (gap 10.3%)
 
 Open Positions (top):
-META [BASE] 0.00% | R_peak 0.00 | Held 0d
+META [BASE] 2.41% | R_peak 0.85 | Held 1d
 ```
