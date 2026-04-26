@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-24T21:58:05+00:00",
+  "generated_at_utc": "2026-04-26T21:51:51+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,12 +15,12 @@
       "ema9": 268.48,
       "ema20": 264.06,
       "atr14": 6.21,
-      "vol": 38101969,
-      "vol20": 42052292,
+      "vol": 38147490,
+      "vol20": 42054568,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": null
+      "next_earnings": "2026-04-30"
     },
     {
       "date": "2026-04-24",
@@ -35,12 +35,12 @@
       "ema9": 415.02,
       "ema20": 403.02,
       "atr14": 11.19,
-      "vol": 27436639,
-      "vol20": 33695996,
+      "vol": 27489557,
+      "vol20": 33698642,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": null
+      "next_earnings": "2026-04-29"
     },
     {
       "date": "2026-04-24",
@@ -55,8 +55,8 @@
       "ema9": 199.54,
       "ema20": 192.81,
       "atr14": 5.28,
-      "vol": 212859148,
-      "vol20": 150994781,
+      "vol": 213264320,
+      "vol20": 151015040,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
@@ -75,12 +75,12 @@
       "ema9": 662.63,
       "ema20": 643.84,
       "atr14": 19.77,
-      "vol": 13332267,
-      "vol20": 16497037,
+      "vol": 13349634,
+      "vol20": 16497905,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": null
+      "next_earnings": "2026-04-29"
     },
     {
       "date": "2026-04-24",
@@ -95,12 +95,12 @@
       "ema9": 379.31,
       "ema20": 377.09,
       "atr14": 15.25,
-      "vol": 62734340,
-      "vol20": 70379269,
+      "vol": 62889111,
+      "vol20": 70387007,
       "notes": "Close below EMA20",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": "2026-04-22"
+      "next_earnings": null
     },
     {
       "date": "2026-04-24",
@@ -115,8 +115,8 @@
       "ema9": 403.21,
       "ema20": 378.2,
       "atr14": 13.37,
-      "vol": 22449072,
-      "vol20": 22900093,
+      "vol": 22488387,
+      "vol20": 22902058,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
@@ -135,12 +135,12 @@
       "ema9": 335.03,
       "ema20": 324.51,
       "atr14": 7.94,
-      "vol": 26385292,
-      "vol20": 25785728,
+      "vol": 26419117,
+      "vol20": 25787419,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": null
+      "next_earnings": "2026-04-29"
     },
     {
       "date": "2026-04-24",
@@ -155,12 +155,12 @@
       "ema9": 250.67,
       "ema20": 238.89,
       "atr14": 7.27,
-      "vol": 53723569,
-      "vol20": 46442936,
+      "vol": 53826664,
+      "vol20": 46448091,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
-      "next_earnings": null
+      "next_earnings": "2026-04-29"
     }
   ],
   "positions": [
