@@ -5,16 +5,18 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries:
-AAPL [BASE] → ENTERED @ 267.61 | Buy Zone
-TSLA [BASE] → ENTERED @ 378.67 | Buy Zone
+AVGO [BASE] → ENTERED @ 399.83 | Buy Zone
 Entries (suppressed by guards):
-MSFT [BASE] → Price extended above buy zone | Buy Zone [405.10, 416.98]
-META [BASE] → Price extended above buy zone | Buy Zone [647.16, 665.83]
-GOOGL [BASE] → Price extended above buy zone | Buy Zone [326.97, 338.09]
-AMZN [BASE] → Price extended above buy zone | Buy Zone [241.00, 252.76]
+AAPL [BASE] → Price extended above buy zone | Buy Zone [265.00, 268.79]
+MSFT [BASE] → Price extended above buy zone | Buy Zone [407.40, 419.43]
+META [BASE] → Price extended above buy zone | Buy Zone [649.46, 666.93]
+GOOGL [BASE] → Price extended above buy zone | Buy Zone [329.14, 340.43]
+AMZN [BASE] → Price extended above buy zone | Buy Zone [242.78, 254.15]
+Exits:
+TSLA [BASE] → EXIT EMA20_break_exit @ 376.02
 
 Open Positions (top):
-META [BASE] 2.95% | R_peak 1.05 | Held 4d
-AAPL [BASE] 0.00% | R_peak 0.00 | Held 0d
-TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
+META [BASE] 1.85% | R_peak 1.05 | Held 5d
+AAPL [BASE] 1.16% | R_peak 0.54 | Held 1d
+AVGO [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
