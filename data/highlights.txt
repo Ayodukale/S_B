@@ -1,14 +1,14 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+NVDA [BASE] → ENTERED @ 199.57 | Buy Zone
 Entries (suppressed by guards):
-AAPL [BASE] → Price extended above buy zone | Buy Zone [265.49, 269.06]
-MSFT [BASE] → Price extended above buy zone | Buy Zone [409.02, 420.44]
-META [BASE] → Price extended above buy zone | Buy Zone [651.33, 667.37]
-GOOGL [BASE] → Price extended above buy zone | Buy Zone [331.12, 342.33]
-AMZN [BASE] → Price extended above buy zone | Buy Zone [244.71, 255.92]
+AAPL [BASE] → Price extended above buy zone | Buy Zone [266.05, 269.52]
+Exits:
+META [BASE] → EXIT EMA20_break_exit @ 611.91
 
 Open Positions (top):
-META [BASE] 1.51% | R_peak 1.05 | Held 6d
-AVGO [BASE] 1.41% | R_peak 0.44 | Held 1d
-AAPL [BASE] 0.96% | R_peak 0.54 | Held 2d
+AVGO [BASE] 4.40% | R_peak 1.38 | Held 2d
+AAPL [BASE] 1.40% | R_peak 0.66 | Held 3d
+NVDA [BASE] 0.00% | R_peak 0.00 | Held 0d
