@@ -4,11 +4,9 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Screening filters triggered:
-AMD — GAP_FILTER_TRIGGERED (gap 15.3%)
 
 Open Positions (top):
-AAPL [BASE] 7.44% | R_peak 3.49 | Held 9d
-AVGO [BASE] 6.41% | R_peak 2.15 | Held 8d
-MSFT [BASE] -0.12% | R_peak 0.00 | Held 5d
+AAPL [BASE] 7.41% | R_peak 3.49 | Held 10d
+AVGO [BASE] 3.18% | R_peak 2.15 | Held 9d
+MSFT [BASE] 1.53% | R_peak 0.51 | Held 6d
 ```
