@@ -3,6 +3,6 @@ Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 
 Open Positions (top):
-AAPL [BASE] 11.68% | R_peak 5.49 | Held 16d
-AVGO [BASE] 4.24% | R_peak 2.36 | Held 15d
-AMZN [BASE] 1.62% | R_peak 0.59 | Held 1d
+AAPL [BASE] 11.43% | R_peak 5.49 | Held 17d
+AVGO [BASE] 9.99% | R_peak 3.13 | Held 16d
+AMZN [BASE] 0.53% | R_peak 0.59 | Held 2d
