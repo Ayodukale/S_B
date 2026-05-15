@@ -1,8 +1,11 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+TSLA [BASE] → ENTERED @ 422.24 | Buy Zone
 
 Open Positions (top):
-AAPL [BASE] 11.43% | R_peak 5.49 | Held 17d
-AVGO [BASE] 9.99% | R_peak 3.13 | Held 16d
-AMZN [BASE] 0.53% | R_peak 0.59 | Held 2d
+AAPL [BASE] 12.19% | R_peak 5.73 | Held 18d
+AVGO [BASE] 6.34% | R_peak 3.13 | Held 17d
+TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMZN [BASE] -0.63% | R_peak 0.59 | Held 3d
