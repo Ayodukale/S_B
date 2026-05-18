@@ -4,10 +4,15 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries:
+AMD [BASE] → ENTERED @ 420.99 | Buy Zone
+Entries (suppressed by guards):
+NVDA [BASE] → Price extended above buy zone | Buy Zone [212.24, 220.42]
 
 Open Positions (top):
-AAPL [BASE] 12.19% | R_peak 5.73 | Held 18d
-AVGO [BASE] 6.34% | R_peak 3.13 | Held 17d
-TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
-AMZN [BASE] -0.63% | R_peak 0.59 | Held 3d
+AAPL [BASE] 11.30% | R_peak 5.73 | Held 21d
+AVGO [BASE] 5.22% | R_peak 3.13 | Held 20d
+AMD [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMZN [BASE] -0.36% | R_peak 0.59 | Held 6d
+TSLA [BASE] -2.90% | R_peak 0.00 | Held 3d
 ```
