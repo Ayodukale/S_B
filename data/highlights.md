@@ -5,16 +5,16 @@
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
 Entries:
-GOOGL [BASE] → ENTERED @ 387.66 | Buy Zone
+TSLA [BASE] → ENTERED @ 417.26 | Buy Zone
+AVGO [BASE] → ENTERED @ 417.76 | Buy Zone
+AMZN [BASE] → ENTERED @ 265.01 | Buy Zone
 Entries (suppressed by guards):
-NVDA [BASE] → Price extended above buy zone | Buy Zone [213.04, 220.45]
-Exits:
-TSLA [BASE] → EXIT EMA20_break_exit @ 404.11
-AVGO [BASE] → EXIT EMA20_break_exit @ 411.07
-AMZN [BASE] → EXIT EMA20_break_exit @ 259.34
+NVDA [BASE] → Price extended above buy zone | Buy Zone [214.03, 221.06]
 
 Open Positions (top):
-AAPL [BASE] 11.72% | R_peak 5.73 | Held 22d
-GOOGL [BASE] 0.00% | R_peak 0.00 | Held 0d
-AMD [BASE] -1.65% | R_peak 0.00 | Held 1d
+AAPL [BASE] 12.94% | R_peak 6.08 | Held 23d
+AMD [BASE] 6.32% | R_peak 0.95 | Held 2d
+GOOGL [BASE] 0.32% | R_peak 0.11 | Held 1d
+TSLA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AVGO [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
