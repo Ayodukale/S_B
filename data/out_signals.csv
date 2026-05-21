@@ -1,9 +1,9 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-05-20,AAPL,BASE,True,WAIT_FOR_PULLBACK,287.93,296.25,True,302.25,296.25,287.93,6.46,38196007,47643864,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,MSFT,BASE,True,WAIT_FOR_PULLBACK,414.05,417.0,True,421.06,417.0,414.05,10.92,27820319,34759573,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,NVDA,BASE,True,WAIT_FOR_PULLBACK,214.03,221.06,True,223.47,221.06,214.03,8.08,182001282,160293377,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2026-05-20
-2026-05-20,TSLA,BASE,True,BUY_ZONE_TRIGGERED,408.81,417.72,True,417.26,417.72,408.81,18.28,45167025,58289934,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,AMD,BASE,True,WAIT_FOR_PULLBACK,391.93,425.99,True,447.58,425.99,391.93,29.94,35930141,45646201,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,AVGO,BASE,True,BUY_ZONE_TRIGGERED,413.69,420.27,True,417.76,420.27,413.69,16.65,16296926,19165998,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,379.4,391.39,True,388.91,391.39,379.4,9.81,31705999,29541533,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-05-20,AMZN,BASE,True,BUY_ZONE_TRIGGERED,262.07,265.32,True,265.01,265.32,262.07,6.6,34881148,45302148,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-05-21,AAPL,BASE,True,WAIT_FOR_PULLBACK,289.55,298.0,True,304.99,298.0,289.55,5.7,42877297,48119439,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,MSFT,BASE,True,WAIT_FOR_PULLBACK,414.53,417.42,False,419.09,417.42,414.53,11.01,31266462,34409683,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,NVDA,BASE,True,BUY_ZONE_TRIGGERED,214.55,220.75,False,219.51,220.75,214.55,8.34,201487032,164799653,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,TSLA,BASE,True,WAIT_FOR_PULLBACK,409.67,417.74,True,417.85,417.74,409.67,17.93,42211818,55708436,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,AMD,BASE,True,WAIT_FOR_PULLBACK,397.42,430.71,True,449.59,430.71,397.42,30.37,27002751,44725720,Price extended above buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,AVGO,BASE,True,BUY_ZONE_TRIGGERED,413.77,419.13,False,414.57,419.13,413.77,16.79,16808489,19032126,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,GOOGL,BASE,True,BUY_ZONE_TRIGGERED,380.19,390.64,False,387.66,390.64,380.19,9.93,24738695,29847875,Price inside EMA buy zone,,market_check_skipped: synthetic_data,
+2026-05-21,AMZN,BASE,True,WAIT_FOR_PULLBACK,262.67,265.95,True,268.46,265.95,262.67,6.43,36461239,45173240,Price extended above buy zone,,market_check_skipped: synthetic_data,
