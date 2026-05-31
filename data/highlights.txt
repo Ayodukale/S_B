@@ -1,8 +1,6 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Exits:
-GOOGL [BASE] → EXIT EMA20_break_exit @ 380.34
 
 Open Positions (top):
 AMD [BASE] 22.59% | R_peak 3.47 | Held 11d
