@@ -4,11 +4,14 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
+Entries (suppressed by guards):
+AVGO [BASE] → Price extended above buy zone | Buy Zone [423.13, 432.86]
+Exits:
+TSLA [BASE] → EXIT EMA20_break_exit @ 415.88
+AMZN [BASE] → EXIT EMA20_break_exit @ 261.26
 
 Open Positions (top):
-AMD [BASE] 22.59% | R_peak 3.47 | Held 11d
-AAPL [BASE] 16.61% | R_peak 7.88 | Held 32d
-AVGO [BASE] 6.94% | R_peak 1.74 | Held 9d
-TSLA [BASE] 4.44% | R_peak 1.36 | Held 9d
-AMZN [BASE] 2.12% | R_peak 1.36 | Held 9d
+AMD [BASE] 21.17% | R_peak 3.47 | Held 14d
+AAPL [BASE] 14.46% | R_peak 7.88 | Held 35d
+AVGO [BASE] 10.10% | R_peak 2.53 | Held 12d
 ```
