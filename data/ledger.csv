@@ -1,5 +1,6 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AAPL,BASE,OPEN,2026-04-27,267.61,,,17.78,8.36,36,315.2,Entered on buy zone trigger
-AMD,BASE,OPEN,2026-05-18,420.99,,,23.88,3.59,15,521.54,Entered on buy zone trigger
-AVGO,BASE,OPEN,2026-05-20,417.76,,,15.27,3.83,13,481.57,Entered on buy zone trigger
-TSLA,BASE,OPEN,2026-06-02,423.74,,,0.0,0.0,0,423.74,Entered on buy zone trigger
+AAPL,BASE,OPEN,2026-04-27,267.61,,,15.94,8.36,37,315.2,Entered on buy zone trigger
+AMD,BASE,OPEN,2026-05-18,420.99,,,28.87,4.34,16,542.52,Entered on buy zone trigger
+AVGO,BASE,OPEN,2026-05-20,417.76,,,14.71,3.83,14,481.57,Entered on buy zone trigger
+MSFT,BASE,OPEN,2026-06-03,427.34,,,0.0,0.0,0,427.34,Entered on buy zone trigger
+TSLA,BASE,OPEN,2026-06-02,423.74,,,-0.01,0.0,1,423.74,Entered on buy zone trigger
