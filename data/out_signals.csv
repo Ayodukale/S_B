@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-06-03,AAPL,BASE,True,WAIT_FOR_PULLBACK,301.21,308.73,False,310.26,308.73,301.21,5.71,51191980,47504963,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-03,MSFT,BASE,True,BUY_ZONE_TRIGGERED,425.12,432.55,False,427.34,432.55,425.12,13.68,38960043,37182692,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-03,NVDA,BASE,True,EXIT_CANDIDATE,215.73,217.76,False,214.75,217.76,215.73,8.43,160541074,176210565,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
-2026-06-03,TSLA,BASE,True,BUY_ZONE_TRIGGERED,420.41,426.16,False,423.7,426.16,420.41,14.14,44350642,50831886,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-03,AMD,BASE,True,WAIT_FOR_PULLBACK,461.33,503.3,True,542.52,503.3,461.33,27.59,29286398,37108862,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-03,AVGO,BASE,True,WAIT_FOR_PULLBACK,433.51,449.93,False,479.23,449.93,433.51,18.4,49277380,23104710,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,2026-06-03
+2026-06-04,AAPL,BASE,True,WAIT_FOR_PULLBACK,302.17,309.23,True,311.23,309.23,302.17,5.63,44812768,46811034,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-06-04,MSFT,BASE,True,BUY_ZONE_TRIGGERED,425.4,431.65,True,428.05,431.65,425.4,13.59,26873780,37015934,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-06-04,NVDA,BASE,True,WAIT_FOR_PULLBACK,216.01,217.94,True,218.66,217.94,216.01,8.42,168546324,175238037,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-06-04,TSLA,BASE,True,EXIT_CANDIDATE,420.22,424.62,False,418.45,424.62,420.22,14.03,35182131,49925229,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
+2026-06-04,AMD,BASE,True,WAIT_FOR_PULLBACK,467.23,507.28,False,523.2,507.28,467.23,29.38,29040701,34180526,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
