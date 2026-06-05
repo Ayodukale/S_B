@@ -1,4 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AAPL,BASE,OPEN,2026-04-27,267.61,,,16.3,8.36,38,315.2,Entered on buy zone trigger
-AMD,BASE,OPEN,2026-05-18,420.99,,,24.28,4.34,17,542.52,Entered on buy zone trigger
-MSFT,BASE,OPEN,2026-06-03,427.34,,,0.17,0.05,1,428.05,Entered on buy zone trigger
+AAPL,BASE,OPEN,2026-04-27,267.61,,,14.85,8.36,39,315.2,Entered on buy zone trigger

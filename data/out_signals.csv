@@ -1,6 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-06-04,AAPL,BASE,True,WAIT_FOR_PULLBACK,302.17,309.23,True,311.23,309.23,302.17,5.63,44812768,46811034,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-04,MSFT,BASE,True,BUY_ZONE_TRIGGERED,425.4,431.65,True,428.05,431.65,425.4,13.59,26873780,37015934,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-04,NVDA,BASE,True,WAIT_FOR_PULLBACK,216.01,217.94,True,218.66,217.94,216.01,8.42,168546324,175238037,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-06-04,TSLA,BASE,True,EXIT_CANDIDATE,420.22,424.62,False,418.45,424.62,420.22,14.03,35182131,49925229,Close below EMA20,True,market_ok: SPY & QQQ in uptrend,
-2026-06-04,AMD,BASE,True,WAIT_FOR_PULLBACK,467.23,507.28,False,523.2,507.28,467.23,29.38,29040701,34180526,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-06-05,AAPL,BASE,True,MARKET_FILTER_ACTIVE,302.66,308.85,False,307.34,308.85,302.66,5.73,66054278,47848762,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-05,MSFT,BASE,True,EXIT_CANDIDATE,424.57,428.66,False,416.67,428.66,424.57,13.33,34661069,36992506,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-05,NVDA,BASE,True,EXIT_CANDIDATE,214.97,215.37,False,205.1,215.37,214.97,8.62,218747410,177781919,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-05,TSLA,BASE,True,EXIT_CANDIDATE,417.44,417.89,False,391.0,417.89,417.44,15.08,63169983,49875194,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-05,AMD,BASE,True,EXIT_CANDIDATE,467.14,499.1,False,466.38,499.1,467.14,31.73,46755262,34277485,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-05,AVGO,BASE,True,EXIT_CANDIDATE,427.7,432.13,False,385.73,432.13,427.7,22.88,51008988,27533414,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
