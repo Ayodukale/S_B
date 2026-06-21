@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-19T22:11:49+00:00",
+  "generated_at_utc": "2026-06-21T22:21:02+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,8 +15,8 @@
       "ema9": 511.47,
       "ema20": 491.2,
       "atr14": 36.89,
-      "vol": 43805666,
-      "vol20": 31939340,
+      "vol": 43805645,
+      "vol20": 31939339,
       "notes": "Price extended above buy zone",
       "market_ok": true,
       "market_reason": "market_ok: SPY & QQQ in uptrend",
