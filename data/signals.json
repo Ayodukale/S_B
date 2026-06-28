@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-26T22:21:14+00:00",
+  "generated_at_utc": "2026-06-28T22:11:35+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,8 +15,8 @@
       "ema9": 522.07,
       "ema20": 505.76,
       "atr14": 36.08,
-      "vol": 52660200,
-      "vol20": 32096876,
+      "vol": 52705137,
+      "vol20": 32099150,
       "notes": "Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising",
       "market_ok": false,
       "market_reason": "SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising",
