@@ -1,2 +1,2 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-06-26,AMD,BASE,True,MARKET_FILTER_ACTIVE,505.76,522.07,False,521.58,522.07,505.76,36.08,52705137,32099150,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-06-29,AMD,BASE,True,WAIT_FOR_PULLBACK,508.97,525.56,True,539.49,525.56,508.97,37.38,26622571,31890117,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
