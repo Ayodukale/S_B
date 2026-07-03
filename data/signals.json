@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-02T22:16:08+00:00",
+  "generated_at_utc": "2026-07-03T22:13:17+00:00",
   "universe_source": "watchlist.txt",
   "signals": [
     {
@@ -15,8 +15,8 @@
       "ema9": 533.55,
       "ema20": 518.17,
       "atr14": 36.96,
-      "vol": 28137104,
-      "vol20": 32089500,
+      "vol": 28228634,
+      "vol20": 32094076,
       "notes": "Close below EMA20",
       "market_ok": false,
       "market_reason": "QQQ below EMA20/SMA50 or SMA50 not rising",
