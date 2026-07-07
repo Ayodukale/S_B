@@ -1,4 +1,5 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-07-06,AAPL,BASE,True,WAIT_FOR_PULLBACK,296.16,297.45,True,312.66,297.45,296.16,8.92,53543712,69573484,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-07-06,TSLA,BASE,True,WAIT_FOR_PULLBACK,404.07,405.44,True,419.77,405.44,404.07,19.73,54509813,50437682,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
-2026-07-06,AMD,BASE,True,WAIT_FOR_PULLBACK,521.4,537.25,True,552.05,537.25,521.4,38.49,30570413,32167112,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-07-07,AAPL,BASE,True,WAIT_FOR_PULLBACK,297.54,300.09,False,310.66,300.09,297.54,8.82,42425695,68431528,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-07,META,BASE,True,WAIT_FOR_PULLBACK,584.87,587.24,True,615.58,587.24,584.87,22.86,18533481,18937777,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-07,TSLA,BASE,True,EXIT_CANDIDATE,403.96,404.93,False,402.9,404.93,403.96,20.33,38037294,49179442,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-07,AMD,BASE,True,EXIT_CANDIDATE,520.9,533.02,False,516.11,533.02,520.9,38.65,29059511,31280740,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
