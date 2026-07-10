@@ -1,7 +1,7 @@
 {
   "AAPL": {
     "next_earnings": null,
-    "fetched_at": "2026-07-06"
+    "fetched_at": "2026-07-10"
   },
   "MSFT": {
     "next_earnings": null,
@@ -17,11 +17,11 @@
   },
   "TSLA": {
     "next_earnings": null,
-    "fetched_at": "2026-07-06"
+    "fetched_at": "2026-07-10"
   },
   "AMD": {
     "next_earnings": null,
-    "fetched_at": "2026-07-06"
+    "fetched_at": "2026-07-10"
   },
   "AVGO": {
     "next_earnings": "2026-06-03",
