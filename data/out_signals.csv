@@ -1,7 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-07-15,AAPL,BASE,True,WAIT_FOR_PULLBACK,306.79,313.89,True,327.5,313.89,306.79,9.48,60804520,65207595,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-15,NVDA,BASE,True,WAIT_FOR_PULLBACK,204.54,205.87,True,212.5,205.87,204.54,7.14,124368601,144167021,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-15,META,BASE,True,WAIT_FOR_PULLBACK,616.2,639.82,True,681.31,639.82,616.2,28.76,18971349,20589031,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-15,AMD,BASE,True,MARKET_FILTER_ACTIVE,529.14,537.48,False,529.14,537.48,529.14,40.04,27754818,29124280,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-15,GOOGL,BASE,True,WAIT_FOR_PULLBACK,360.51,360.77,True,370.92,360.77,360.51,10.34,28249907,34265096,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-15,AMZN,BASE,True,WAIT_FOR_PULLBACK,245.15,246.8,True,254.96,246.8,245.15,7.53,45120133,60849788,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,AAPL,BASE,True,WAIT_FOR_PULLBACK,309.31,317.77,True,333.26,317.77,309.31,8.67,62811584,66359866,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,MSFT,BASE,True,WAIT_FOR_PULLBACK,388.66,389.8,True,401.1,389.8,388.66,12.32,36992428,47291345,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,NVDA,BASE,True,WAIT_FOR_PULLBACK,204.81,206.18,False,207.4,206.18,204.81,7.0,122535196,144033025,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,META,BASE,True,WAIT_FOR_PULLBACK,620.8,644.76,False,664.54,644.76,620.8,29.07,16220354,20834178,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,AMD,BASE,True,EXIT_CANDIDATE,526.45,530.17,False,500.94,530.17,526.45,39.57,26993390,29056787,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-16,AMZN,BASE,True,WAIT_FOR_PULLBACK,245.6,247.42,False,249.89,247.42,245.6,7.63,45329528,61362790,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
