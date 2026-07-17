@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-07-16,AAPL,BASE,True,WAIT_FOR_PULLBACK,309.31,317.77,True,333.26,317.77,309.31,8.67,62811584,66359866,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-16,MSFT,BASE,True,WAIT_FOR_PULLBACK,388.66,389.8,True,401.1,389.8,388.66,12.32,36992428,47291345,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-16,NVDA,BASE,True,WAIT_FOR_PULLBACK,204.81,206.18,False,207.4,206.18,204.81,7.0,122535196,144033025,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-16,META,BASE,True,WAIT_FOR_PULLBACK,620.8,644.76,False,664.54,644.76,620.8,29.07,16220354,20834178,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-16,AMD,BASE,True,EXIT_CANDIDATE,526.45,530.17,False,500.94,530.17,526.45,39.57,26993390,29056787,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-07-16,AMZN,BASE,True,WAIT_FOR_PULLBACK,245.6,247.42,False,249.89,247.42,245.6,7.63,45329528,61362790,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-17,AAPL,BASE,True,WAIT_FOR_PULLBACK,311.64,320.96,True,333.74,320.96,311.64,8.26,63653327,67420794,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-17,MSFT,BASE,True,WAIT_FOR_PULLBACK,389.15,390.61,False,393.82,390.61,389.15,11.46,33005947,46851841,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-17,NVDA,BASE,True,EXIT_CANDIDATE,204.62,205.5,False,202.81,205.5,204.62,7.35,143983963,144850018,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-17,META,BASE,True,WAIT_FOR_PULLBACK,623.2,645.01,False,646.01,645.01,623.2,30.64,22217293,20923751,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-17,AMZN,BASE,True,MARKET_FILTER_ACTIVE,245.75,247.38,False,247.23,247.38,245.75,7.55,43501605,61304886,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
