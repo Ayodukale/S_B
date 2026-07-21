@@ -2,7 +2,9 @@
 
 ```
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-No active positions. Review watchlist tomorrow.
+Entries (suppressed by guards):
+META [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [627.12, 644.90]
+AMZN [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [246.29, 247.83]
 ```
