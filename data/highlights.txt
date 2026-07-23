@@ -1,5 +1,7 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
 Entries (suppressed by guards):
-META [BASE] → Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [627.12, 641.36]
+AAPL [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [316.13, 323.33]
+Screening filters triggered:
+TSLA — GAP_FILTER_TRIGGERED (gap 8.8%)
