@@ -1,2 +1,2 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-07-31,MSFT,BASE,True,WAIT_FOR_PULLBACK,402.19,414.74,True,464.72,414.74,402.19,16.44,60782637,36214551,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-07-31,MSFT,BASE,True,WAIT_FOR_PULLBACK,402.19,414.74,True,464.72,414.74,402.19,16.44,60845971,36227090,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
