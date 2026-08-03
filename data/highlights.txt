@@ -1,7 +1,4 @@
 === HIGHLIGHTS (Today) ===
-Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
+Market Check: ⚠️ QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Screening filters triggered:
-AAPL — GAP_FILTER_TRIGGERED (gap 8.6%)
-AMZN — GAP_FILTER_TRIGGERED (gap 12.5%)
 No active positions. Review watchlist tomorrow.
