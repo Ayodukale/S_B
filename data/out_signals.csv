@@ -1,5 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-03,AAPL,BASE,True,EXIT_CANDIDATE,320.81,322.63,False,303.42,322.63,320.81,10.18,74804803,54698864,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-03,MSFT,BASE,True,WAIT_FOR_PULLBACK,410.33,429.32,True,487.65,429.32,410.33,17.49,66639430,37847834,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-03,AVGO,BASE,True,WAIT_FOR_PULLBACK,385.42,385.73,True,392.23,385.73,385.42,16.17,17301447,20217679,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-03,AMZN,BASE,True,WAIT_FOR_PULLBACK,246.59,251.14,True,284.02,251.14,246.59,10.03,90286174,48067616,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-04,AAPL,BASE,True,EXIT_CANDIDATE,319.72,319.98,True,309.38,319.98,319.72,9.84,69371605,56055314,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-04,MSFT,BASE,True,WAIT_FOR_PULLBACK,418.19,442.02,True,492.81,442.02,418.19,17.93,51058395,38942258,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-04,AVGO,BASE,True,WAIT_FOR_PULLBACK,388.54,392.22,True,418.16,392.22,388.54,17.42,29505096,20488796,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-04,GOOGL,BASE,True,WAIT_FOR_PULLBACK,350.43,352.9,True,377.65,352.9,350.43,13.86,35836079,31200665,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-04,AMZN,BASE,True,WAIT_FOR_PULLBACK,249.53,256.39,False,277.42,256.39,249.53,9.98,69932818,49562488,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
