@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-12,MSFT,BASE,True,WAIT_FOR_PULLBACK,454.47,483.84,False,492.43,483.84,454.47,17.37,28543722,39271577,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-12,NVDA,BASE,True,WAIT_FOR_PULLBACK,211.01,216.01,True,224.09,216.01,211.01,7.83,108219592,124984584,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-12,AVGO,BASE,True,WAIT_FOR_PULLBACK,402.7,412.34,False,416.05,412.34,402.7,15.93,16752108,18349372,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-12,NFLX,BASE,True,WAIT_FOR_PULLBACK,73.52,74.03,False,74.21,74.03,73.52,2.2,20625063,45968033,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-12,GOOGL,BASE,True,EXIT_CANDIDATE,351.19,351.33,False,343.54,351.33,351.19,12.1,24936798,33085438,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-12,AMZN,BASE,True,MARKET_FILTER_ACTIVE,259.95,268.11,False,267.28,268.11,259.95,9.84,29854726,49438831,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-13,MSFT,BASE,True,WAIT_FOR_PULLBACK,458.51,486.45,True,496.88,486.45,458.51,17.4,22978755,38591055,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-13,NVDA,BASE,True,WAIT_FOR_PULLBACK,212.37,217.87,True,225.3,217.87,212.37,7.58,98392420,123768017,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-13,AVGO,BASE,True,WAIT_FOR_PULLBACK,404.14,413.43,True,417.82,413.43,404.14,15.92,13151234,17836870,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-13,NFLX,BASE,True,WAIT_FOR_PULLBACK,73.97,74.87,True,78.24,74.87,73.97,2.3,41056272,44152111,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-13,AMZN,BASE,True,MARKET_FILTER_ACTIVE,260.44,267.51,False,265.13,267.51,260.44,9.93,32078280,48777955,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
