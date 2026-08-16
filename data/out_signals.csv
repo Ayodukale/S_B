@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-14,MSFT,BASE,True,WAIT_FOR_PULLBACK,462.02,488.24,False,495.4,488.24,462.02,16.95,16183518,37750733,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-14,NVDA,BASE,True,WAIT_FOR_PULLBACK,213.59,219.33,False,225.16,219.33,213.59,6.84,75430975,120364985,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-14,AVGO,BASE,True,EXIT_CANDIDATE,403.08,409.34,False,392.99,409.34,403.08,16.84,29397180,18098551,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-14,NFLX,BASE,True,WAIT_FOR_PULLBACK,74.37,75.53,False,78.16,75.53,74.37,2.24,26644886,38402718,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-14,AMZN,BASE,True,MARKET_FILTER_ACTIVE,260.65,266.54,False,262.65,266.54,260.65,9.83,27122466,47960062,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-14,MSFT,BASE,True,WAIT_FOR_PULLBACK,462.02,488.24,False,495.4,488.24,462.02,16.95,16217647,37752432,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-14,NVDA,BASE,True,WAIT_FOR_PULLBACK,213.59,219.33,False,225.16,219.33,213.59,6.84,75680870,120374086,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-14,AVGO,BASE,True,EXIT_CANDIDATE,403.08,409.34,False,392.99,409.34,403.08,16.84,29513597,18104378,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-14,NFLX,BASE,True,WAIT_FOR_PULLBACK,74.37,75.53,False,78.16,75.53,74.37,2.24,26750961,38408027,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-14,AMZN,BASE,True,MARKET_FILTER_ACTIVE,260.65,266.54,False,262.65,266.54,260.65,9.83,27251660,47966513,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
