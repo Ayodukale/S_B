@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-17,MSFT,BASE,True,MARKET_FILTER_ACTIVE,463.77,486.66,False,480.35,486.66,463.77,17.36,29418930,37827590,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-17,NVDA,BASE,True,WAIT_FOR_PULLBACK,214.68,220.46,False,225.01,220.46,214.68,6.63,93314977,120604758,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-17,AVGO,BASE,True,EXIT_CANDIDATE,402.07,405.96,False,392.43,405.96,402.07,16.4,19990320,18382872,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-17,NFLX,BASE,True,WAIT_FOR_PULLBACK,74.53,75.63,False,76.02,75.63,74.53,2.22,30681600,36908650,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-17,AMZN,BASE,True,MARKET_FILTER_ACTIVE,260.72,265.49,False,261.31,265.49,260.72,10.0,43750439,48533711,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-18,MSFT,BASE,True,MARKET_FILTER_ACTIVE,465.47,485.65,True,481.63,485.65,465.47,16.97,28122198,38038215,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-18,NVDA,BASE,True,MARKET_FILTER_ACTIVE,215.16,220.32,False,219.74,220.32,215.16,6.58,102641882,120322089,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-18,AVGO,BASE,True,EXIT_CANDIDATE,399.96,400.77,False,380.0,400.77,399.96,16.31,22814170,18661640,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-18,NFLX,BASE,True,WAIT_FOR_PULLBACK,74.84,76.06,True,77.77,76.06,74.84,2.3,35884181,35878134,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-18,AMZN,BASE,True,EXIT_CANDIDATE,260.6,264.28,False,259.45,264.28,260.6,9.84,33036128,48806220,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
