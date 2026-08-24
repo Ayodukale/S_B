@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-21,MSFT,BASE,True,MARKET_FILTER_ACTIVE,469.98,484.28,True,483.24,484.28,469.98,10.54,22510774,36653475,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-21,NVDA,BASE,True,EXIT_CANDIDATE,215.45,218.29,False,214.72,218.29,215.45,5.75,98869300,116601874,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-21,TSLA,BASE,True,WAIT_FOR_PULLBACK,342.1,343.89,True,362.86,343.89,342.1,11.51,59223958,35100030,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-21,NFLX,BASE,True,WAIT_FOR_PULLBACK,76.17,77.95,False,79.59,77.95,76.17,2.22,23773822,33630699,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-21,AMZN,BASE,True,EXIT_CANDIDATE,260.78,262.68,False,258.63,262.68,260.78,6.39,35722956,47976178,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-24,MSFT,BASE,True,WAIT_FOR_PULLBACK,471.63,484.88,True,487.31,484.88,471.63,9.72,16802073,36100771,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-24,NVDA,BASE,True,EXIT_CANDIDATE,214.79,216.33,False,208.48,216.33,214.79,5.89,136025123,115685445,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-24,TSLA,BASE,True,WAIT_FOR_PULLBACK,342.75,344.9,False,348.95,344.9,342.75,11.95,39052399,34806682,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-24,NFLX,BASE,True,WAIT_FOR_PULLBACK,76.53,78.36,True,80.01,78.36,76.53,2.23,20935480,32722935,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-24,AMZN,BASE,True,MARKET_FILTER_ACTIVE,260.9,262.56,True,262.07,262.56,260.9,6.14,27992526,47625830,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
