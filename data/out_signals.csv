@@ -1,6 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-26,MSFT,BASE,True,WAIT_FOR_PULLBACK,475.72,488.27,True,496.37,488.27,475.72,9.12,20858850,34162268,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-26,NVDA,BASE,True,EXIT_CANDIDATE,214.15,214.47,False,209.66,214.47,214.15,5.44,179899875,116667581,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-26,TSLA,BASE,True,MARKET_FILTER_ACTIVE,343.69,345.94,False,345.82,345.94,343.69,12.16,28528146,33766804,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-26,NFLX,BASE,True,WAIT_FOR_PULLBACK,77.49,79.6,False,81.46,79.6,77.49,2.22,22874952,30802383,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-26,AMZN,BASE,True,EXIT_CANDIDATE,260.85,261.87,False,260.28,261.87,260.85,5.52,21528334,45509698,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-27,MSFT,BASE,True,WAIT_FOR_PULLBACK,478.51,491.63,True,505.06,491.63,478.51,9.83,28673436,30082904,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-27,NVDA,BASE,True,WAIT_FOR_PULLBACK,215.47,217.17,True,227.98,217.17,215.47,6.51,298343048,125131034,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-27,TSLA,BASE,True,WAIT_FOR_PULLBACK,344.75,347.71,True,354.81,347.71,344.75,11.88,30136110,33375583,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-27,NFLX,BASE,True,WAIT_FOR_PULLBACK,77.72,79.65,False,79.84,79.65,77.72,2.28,26004434,29389550,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-27,AMZN,BASE,True,EXIT_CANDIDATE,260.42,260.74,False,256.26,260.74,260.42,5.47,35927853,42214105,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
