@@ -1,7 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-28,AAPL,BASE,True,WAIT_FOR_PULLBACK,312.84,313.2,True,319.7,313.2,312.84,6.04,38649398,43058334,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-28,MSFT,BASE,True,WAIT_FOR_PULLBACK,481.85,496.01,True,513.53,496.01,481.85,9.77,29207325,28501738,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-28,NVDA,BASE,True,WAIT_FOR_PULLBACK,215.67,217.25,False,217.55,217.25,215.67,6.88,195116417,127917136,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-28,TSLA,BASE,True,WAIT_FOR_PULLBACK,345.13,347.92,False,348.75,347.92,345.13,12.43,32972214,33192669,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-28,NFLX,BASE,True,WAIT_FOR_PULLBACK,78.1,80.06,True,81.72,80.06,78.1,2.26,29092685,29110312,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-28,AMZN,BASE,True,WAIT_FOR_PULLBACK,260.99,261.88,True,266.43,261.88,260.99,5.81,49547427,38238735,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,AAPL,BASE,True,WAIT_FOR_PULLBACK,313.22,313.93,False,316.85,313.93,313.22,6.13,41254525,41368450,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,MSFT,BASE,True,WAIT_FOR_PULLBACK,484.27,498.27,False,507.29,498.27,484.27,9.81,27216285,26524200,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,NVDA,BASE,True,WAIT_FOR_PULLBACK,216.15,217.95,True,220.78,217.95,216.15,6.81,124747191,127713565,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,TSLA,BASE,True,WAIT_FOR_PULLBACK,347.3,351.93,True,367.95,351.93,347.3,13.51,61767029,34353575,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,NFLX,BASE,True,WAIT_FOR_PULLBACK,78.38,80.26,False,81.05,80.26,78.38,2.16,30901454,28959270,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-08-31,AMZN,BASE,True,EXIT_CANDIDATE,260.87,261.46,False,259.77,261.46,260.87,5.94,46099133,36002172,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
