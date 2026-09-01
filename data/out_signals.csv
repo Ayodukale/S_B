@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-08-31,AAPL,BASE,True,WAIT_FOR_PULLBACK,313.22,313.93,False,316.85,313.93,313.22,6.13,41254525,41368450,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-31,MSFT,BASE,True,WAIT_FOR_PULLBACK,484.27,498.27,False,507.29,498.27,484.27,9.81,27216285,26524200,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-31,NVDA,BASE,True,WAIT_FOR_PULLBACK,216.15,217.95,True,220.78,217.95,216.15,6.81,124747191,127713565,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-31,TSLA,BASE,True,WAIT_FOR_PULLBACK,347.3,351.93,True,367.95,351.93,347.3,13.51,61767029,34353575,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-31,NFLX,BASE,True,WAIT_FOR_PULLBACK,78.38,80.26,False,81.05,80.26,78.38,2.16,30901454,28959270,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-08-31,AMZN,BASE,True,EXIT_CANDIDATE,260.87,261.46,False,259.77,261.46,260.87,5.94,46099133,36002172,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-01,AAPL,BASE,True,WAIT_FOR_PULLBACK,314.35,316.17,True,325.13,316.17,314.35,6.66,53133609,40625082,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-01,MSFT,BASE,True,WAIT_FOR_PULLBACK,485.87,498.82,False,501.02,498.82,485.87,9.69,21130649,25057960,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-01,NVDA,BASE,True,MARKET_FILTER_ACTIVE,216.28,217.85,False,217.44,217.85,216.28,6.67,109592664,126447098,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-01,TSLA,BASE,True,WAIT_FOR_PULLBACK,348.14,352.76,False,356.09,352.76,348.14,13.73,36152088,34495264,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-01,NFLX,BASE,True,WAIT_FOR_PULLBACK,78.61,80.37,False,80.81,80.37,78.61,2.26,21151692,27872960,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
