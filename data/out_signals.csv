@@ -1,6 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-09-02,AAPL,BASE,True,WAIT_FOR_PULLBACK,315.36,317.93,False,324.96,317.93,315.36,6.73,33761509,39842318,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-02,MSFT,BASE,True,MARKET_FILTER_ACTIVE,486.91,498.42,False,496.82,498.42,486.91,9.57,15329403,24154932,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-02,NVDA,BASE,True,WAIT_FOR_PULLBACK,217.05,219.16,True,224.41,219.16,217.05,7.17,156819745,126384663,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-02,TSLA,BASE,True,WAIT_FOR_PULLBACK,348.98,353.61,True,357.01,353.61,348.98,13.32,33906633,34799906,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-02,NFLX,BASE,True,WAIT_FOR_PULLBACK,79.0,80.84,True,82.73,80.84,79.0,2.16,22049901,27519612,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,AAPL,BASE,True,WAIT_FOR_PULLBACK,316.59,319.98,True,328.21,319.98,316.59,6.98,37261790,39399156,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,MSFT,BASE,True,WAIT_FOR_PULLBACK,489.12,500.76,True,510.12,500.76,489.12,10.48,24117415,23534559,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,NVDA,BASE,True,WAIT_FOR_PULLBACK,218.14,221.02,True,228.45,221.02,218.14,7.39,133986315,127401194,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,META,BASE,True,WAIT_FOR_PULLBACK,580.08,582.86,True,610.68,582.86,580.08,19.65,19712141,15768558,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,TSLA,BASE,True,WAIT_FOR_PULLBACK,351.59,358.16,True,376.36,358.16,351.59,14.12,63512640,36676109,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-03,NFLX,BASE,True,WAIT_FOR_PULLBACK,79.35,81.21,False,82.67,81.21,79.35,2.23,23991999,27275974,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
