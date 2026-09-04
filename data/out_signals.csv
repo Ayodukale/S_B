@@ -1,7 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-09-03,AAPL,BASE,True,WAIT_FOR_PULLBACK,316.59,319.98,True,328.21,319.98,316.59,6.98,37261790,39399156,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-03,MSFT,BASE,True,WAIT_FOR_PULLBACK,489.12,500.76,True,510.12,500.76,489.12,10.48,24117415,23534559,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-03,NVDA,BASE,True,WAIT_FOR_PULLBACK,218.14,221.02,True,228.45,221.02,218.14,7.39,133986315,127401194,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-03,META,BASE,True,WAIT_FOR_PULLBACK,580.08,582.86,True,610.68,582.86,580.08,19.65,19712141,15768558,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-03,TSLA,BASE,True,WAIT_FOR_PULLBACK,351.59,358.16,True,376.36,358.16,351.59,14.12,63512640,36676109,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-09-03,NFLX,BASE,True,WAIT_FOR_PULLBACK,79.35,81.21,False,82.67,81.21,79.35,2.23,23991999,27275974,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,AAPL,BASE,True,MARKET_FILTER_ACTIVE,316.91,319.98,False,319.97,319.98,316.91,7.43,39569001,39656399,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,MSFT,BASE,True,MARKET_FILTER_ACTIVE,490.13,500.55,False,499.7,500.55,490.13,10.09,18083121,22996826,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,NVDA,BASE,True,WAIT_FOR_PULLBACK,219.3,222.89,True,230.36,222.89,219.3,7.62,135029913,128888337,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,META,BASE,True,WAIT_FOR_PULLBACK,583.58,589.64,True,616.77,589.64,583.58,18.7,15948900,16004740,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,TSLA,BASE,True,MARKET_FILTER_ACTIVE,351.83,357.34,False,354.08,357.34,351.83,15.34,64874055,37954594,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-09-04,NFLX,BASE,True,EXIT_CANDIDATE,79.25,80.62,False,78.25,80.62,79.25,2.33,40120668,28041777,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
