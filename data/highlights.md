@@ -5,6 +5,5 @@
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
 Entries (suppressed by guards):
-TSLA [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [356.77, 361.72]
-AMD [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [487.68, 493.96]
+MSFT [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [493.02, 498.02]
 ```
