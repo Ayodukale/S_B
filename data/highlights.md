@@ -4,9 +4,7 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Entries:
-MSFT [BASE] → ENTERED @ 497.93 | Buy Zone
 
 Open Positions (top):
-MSFT [BASE] 0.00% | R_peak 0.00 | Held 0d
+MSFT [BASE] 3.66% | R_peak 1.79 | Held 1d
 ```

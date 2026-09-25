@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-MSFT,BASE,OPEN,2026-09-24,497.93,,,0.0,0.0,0,497.93,Entered on buy zone trigger
+MSFT,BASE,OPEN,2026-09-24,497.93,,,3.66,1.79,1,516.17,Entered on buy zone trigger
