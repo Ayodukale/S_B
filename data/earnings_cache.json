@@ -1,27 +1,27 @@
 {
   "AAPL": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "MSFT": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "NVDA": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "META": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "TSLA": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "AMD": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "AVGO": {
     "next_earnings": "2026-06-03",
@@ -33,7 +33,7 @@
   },
   "GOOGL": {
     "next_earnings": null,
-    "fetched_at": "2026-09-22"
+    "fetched_at": "2026-09-27"
   },
   "AMZN": {
     "next_earnings": null,
