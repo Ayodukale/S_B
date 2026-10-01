@@ -1,7 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-09-29,AAPL,BASE,True,EXIT_CANDIDATE,330.95,335.06,False,329.4,335.06,330.95,6.78,38478008,42465673,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-29,MSFT,BASE,True,WAIT_FOR_PULLBACK,499.44,504.32,False,508.96,504.32,499.44,11.73,21841853,21064948,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-29,NVDA,BASE,True,WAIT_FOR_PULLBACK,222.68,225.1,False,227.21,225.1,222.68,5.39,101494886,112240000,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-29,META,BASE,True,WAIT_FOR_PULLBACK,686.76,723.56,True,738.79,723.56,686.76,29.9,23613677,24028143,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-29,TSLA,BASE,True,EXIT_CANDIDATE,363.68,365.65,False,352.84,365.65,363.68,11.0,32501280,38525921,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-29,AMD,BASE,True,WAIT_FOR_PULLBACK,560.63,596.22,False,607.57,596.22,560.63,26.04,16513856,22167403,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,AAPL,BASE,True,MARKET_FILTER_ACTIVE,331.15,334.65,True,333.02,334.65,331.15,6.69,49988455,42306722,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,MSFT,BASE,True,WAIT_FOR_PULLBACK,500.72,506.03,True,512.9,506.03,500.72,11.9,27223265,21375737,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,NVDA,BASE,True,WAIT_FOR_PULLBACK,223.22,225.75,True,228.38,225.75,223.22,5.3,121732239,112867310,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,META,BASE,True,WAIT_FOR_PULLBACK,690.41,723.89,False,725.18,723.89,690.41,29.62,19293111,24212883,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,TSLA,BASE,True,EXIT_CANDIDATE,362.84,363.48,True,354.81,363.48,362.84,10.84,39239833,38678216,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-09-30,AMD,BASE,True,WAIT_FOR_PULLBACK,565.5,599.32,True,611.76,599.32,565.5,25.81,16749064,22194162,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,

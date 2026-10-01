@@ -1,6 +1,8 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
+Entries (suppressed by guards):
+AAPL [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising | Buy Zone [331.15, 334.65]
 
 Open Positions (top):
-MSFT [BASE] 2.22% | R_peak 1.79 | Held 5d
+MSFT [BASE] 3.01% | R_peak 1.79 | Held 6d
