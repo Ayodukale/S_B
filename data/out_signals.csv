@@ -1,7 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-09-30,AAPL,BASE,True,MARKET_FILTER_ACTIVE,331.15,334.65,True,333.02,334.65,331.15,6.69,49988455,42306722,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-30,MSFT,BASE,True,WAIT_FOR_PULLBACK,500.72,506.03,True,512.9,506.03,500.72,11.9,27223265,21375737,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-30,NVDA,BASE,True,WAIT_FOR_PULLBACK,223.22,225.75,True,228.38,225.75,223.22,5.3,121732239,112867310,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-30,META,BASE,True,WAIT_FOR_PULLBACK,690.41,723.89,False,725.18,723.89,690.41,29.62,19293111,24212883,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-30,TSLA,BASE,True,EXIT_CANDIDATE,362.84,363.48,True,354.81,363.48,362.84,10.84,39239833,38678216,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-09-30,AMD,BASE,True,WAIT_FOR_PULLBACK,565.5,599.32,True,611.76,599.32,565.5,25.81,16749064,22194162,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-01,AAPL,BASE,True,EXIT_CANDIDATE,331.07,333.78,False,330.32,333.78,331.07,6.5,36306366,42433223,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-01,MSFT,BASE,True,WAIT_FOR_PULLBACK,501.87,507.39,False,512.8,507.39,501.87,12.2,19732128,21570539,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-01,NVDA,BASE,True,WAIT_FOR_PULLBACK,223.95,226.77,True,230.86,226.77,223.95,5.32,98591999,109941678,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-01,META,BASE,True,WAIT_FOR_PULLBACK,693.8,724.3,True,725.93,724.3,693.8,29.23,12411635,24004701,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-01,AMD,BASE,True,WAIT_FOR_PULLBACK,570.28,602.61,True,615.73,602.61,570.28,25.67,17134534,22453948,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
