@@ -1,6 +1,7 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-10-01,AAPL,BASE,True,EXIT_CANDIDATE,331.07,333.78,False,330.32,333.78,331.07,6.5,36306366,42433223,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-10-01,MSFT,BASE,True,WAIT_FOR_PULLBACK,501.87,507.39,False,512.8,507.39,501.87,12.2,19732128,21570539,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-10-01,NVDA,BASE,True,WAIT_FOR_PULLBACK,223.95,226.77,True,230.86,226.77,223.95,5.32,98591999,109941678,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-10-01,META,BASE,True,WAIT_FOR_PULLBACK,693.8,724.3,True,725.93,724.3,693.8,29.23,12411635,24004701,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
-2026-10-01,AMD,BASE,True,WAIT_FOR_PULLBACK,570.28,602.61,True,615.73,602.61,570.28,25.67,17134534,22453948,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising,
+2026-10-02,AAPL,BASE,True,BUY_ZONE_TRIGGERED,331.32,333.76,True,333.69,333.76,331.32,6.5,34097846,42276829,Price inside EMA buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-10-02,MSFT,BASE,True,WAIT_FOR_PULLBACK,503.36,509.42,True,517.53,509.42,503.36,11.85,18340120,21281250,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-10-02,NVDA,BASE,True,WAIT_FOR_PULLBACK,224.9,228.21,True,233.95,228.21,224.9,5.15,135277389,109971464,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-10-02,META,BASE,True,WAIT_FOR_PULLBACK,697.06,725.05,True,728.08,725.05,697.06,28.88,12964080,23666045,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-10-02,TSLA,BASE,True,WAIT_FOR_PULLBACK,362.82,363.4,True,370.59,363.4,362.82,11.46,55330435,38122982,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
+2026-10-02,AMD,BASE,True,WAIT_FOR_PULLBACK,576.34,608.87,True,633.91,608.87,576.34,25.24,19865310,22703811,Price extended above buy zone,True,market_ok: SPY & QQQ in uptrend,
