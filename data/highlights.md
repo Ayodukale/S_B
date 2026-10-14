@@ -4,13 +4,14 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ✅ SPY & QQQ uptrend — new entries allowed.
 
-Exits:
-NVDA [BASE] → EXIT EMA20_break_exit @ 226.32
-AMD [BASE] → EXIT EMA20_break_exit @ 594.24
-AVGO [BASE] → EXIT EMA20_break_exit @ 354.73
+Entries:
+NVDA [BASE] → ENTERED @ 228.52 | Buy Zone
+AMD [BASE] → ENTERED @ 605.53 | Buy Zone
 
 Open Positions (top):
-MSFT [BASE] 8.68% | R_peak 4.24 | Held 18d
-META [BASE] 3.00% | R_peak 0.76 | Held 5d
-AAPL [BASE] 2.18% | R_peak 1.12 | Held 10d
+MSFT [BASE] 9.14% | R_peak 4.46 | Held 19d
+META [BASE] 5.71% | R_peak 1.44 | Held 6d
+AAPL [BASE] 2.27% | R_peak 1.17 | Held 11d
+NVDA [BASE] 0.00% | R_peak 0.00 | Held 0d
+AMD [BASE] 0.00% | R_peak 0.00 | Held 0d
 ```
