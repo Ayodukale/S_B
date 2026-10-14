@@ -1,6 +1,4 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AAPL,BASE,OPEN,2026-10-02,333.69,,,2.27,1.17,11,341.27,Entered on buy zone trigger
-AMD,BASE,OPEN,2026-10-13,605.53,,,0.0,0.0,0,605.53,Entered on buy zone trigger
-META,BASE,OPEN,2026-10-07,721.31,,,5.71,1.44,6,762.5,Entered on buy zone trigger
-MSFT,BASE,OPEN,2026-09-24,497.93,,,9.14,4.46,19,543.45,Entered on buy zone trigger
-NVDA,BASE,OPEN,2026-10-13,228.52,,,0.0,0.0,0,228.52,Entered on buy zone trigger
+AAPL,BASE,OPEN,2026-10-02,333.69,,,2.78,1.43,12,342.96,Entered on buy zone trigger
+META,BASE,OPEN,2026-10-07,721.31,,,2.25,1.44,7,762.5,Entered on buy zone trigger
+MSFT,BASE,OPEN,2026-09-24,497.93,,,7.18,4.46,20,543.45,Entered on buy zone trigger
