@@ -1,8 +1,6 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-10-15,AAPL,BASE,True,WAIT_FOR_PULLBACK,336.12,339.37,False,342.0,339.37,336.12,6.52,39746487,38323443,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,MSFT,BASE,True,WAIT_FOR_PULLBACK,521.87,532.31,True,539.44,532.31,521.87,11.35,24146361,23049831,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,META,BASE,True,WAIT_FOR_PULLBACK,720.58,736.16,False,736.72,736.16,720.58,22.31,16959902,22128946,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,TSLA,BASE,True,EXIT_CANDIDATE,369.48,371.16,False,362.44,371.16,369.48,10.44,26684885,33963282,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,AMD,BASE,True,EXIT_CANDIDATE,592.1,596.65,False,562.23,596.65,592.1,26.22,28811051,21725450,Close below EMA20,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,GOOGL,BASE,True,WAIT_FOR_PULLBACK,347.21,349.09,True,349.22,349.09,347.21,8.45,21317213,26081685,Price extended above buy zone,False,QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-10-15,AMZN,BASE,True,MARKET_FILTER_ACTIVE,254.76,255.77,True,254.76,255.77,254.76,5.76,34538352,36397173,Market filter active: QQQ below EMA20/SMA50 or SMA50 not rising,False,QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-10-16,AAPL,BASE,True,WAIT_FOR_PULLBACK,336.82,340.19,True,343.46,340.19,336.82,6.69,59977666,36993999,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-10-16,MSFT,BASE,True,MARKET_FILTER_ACTIVE,522.56,531.66,False,529.05,531.66,522.56,11.74,25362078,22337094,Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-10-16,META,BASE,True,EXIT_CANDIDATE,719.51,730.8,False,709.32,730.8,719.51,22.11,20709787,21783938,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-10-16,GOOGL,BASE,True,EXIT_CANDIDATE,346.58,347.39,False,340.59,347.39,346.58,8.96,28670964,25134340,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-10-16,AMZN,BASE,True,EXIT_CANDIDATE,254.31,254.62,False,250.0,254.62,254.31,5.9,40515271,35810505,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
