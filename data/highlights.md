@@ -4,9 +4,9 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Exits:
-MSFT [BASE] → EXIT EMA20_break_exit @ 521.08
+Entries (suppressed by guards):
+TSLA [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [370.86, 372.81]
 
 Open Positions (top):
-AAPL [BASE] 4.35% | R_peak 2.23 | Held 20d
+AAPL [BASE] 4.21% | R_peak 2.23 | Held 21d
 ```
