@@ -1,2 +1,2 @@
 ticker,strategy,status,entry_date,entry_price,exit_date,exit_price,pct_since_entry,r_peak,days_held,highest_close,notes
-AAPL,BASE,OPEN,2026-10-02,333.69,,,3.06,2.23,24,348.22,Entered on buy zone trigger
+AAPL,BASE,OPEN,2026-10-02,333.69,,,4.02,2.23,25,348.22,Entered on buy zone trigger
