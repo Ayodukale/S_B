@@ -1,10 +1,5 @@
 === HIGHLIGHTS (Today) ===
 Market Check: ⚠️ SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising — pause new entries.
 
-Entries (suppressed by guards):
-AAPL [BASE] → Market filter active: SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising | Buy Zone [342.24, 345.08]
-Screening filters triggered:
-AMD — GAP_FILTER_TRIGGERED (gap 10.2%)
-
-Open Positions (top):
-AAPL [BASE] 3.28% | R_peak 2.34 | Held 28d
+Exits:
+AAPL [BASE] → EXIT EMA20_break_exit @ 338.32
