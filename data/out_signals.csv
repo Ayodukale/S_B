@@ -1,6 +1,5 @@
 date,ticker,strategy,setup,action,buy_zone_low,buy_zone_high,confirm_today,close,ema9,ema20,atr14,vol,vol20,notes,market_ok,market_reason,next_earnings
-2026-11-13,AAPL,BASE,True,WAIT_FOR_PULLBACK,346.55,350.38,True,356.27,350.38,346.55,9.46,40027467,47207325,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-11-13,MSFT,BASE,True,EXIT_CANDIDATE,528.29,528.44,True,523.88,528.44,528.29,17.55,26189242,26240274,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-11-13,TSLA,BASE,True,WAIT_FOR_PULLBACK,383.06,385.5,False,390.22,385.5,383.06,18.16,32392965,39430115,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-11-13,AVGO,BASE,True,WAIT_FOR_PULLBACK,335.2,336.26,False,347.01,336.26,335.2,20.25,31654183,26851936,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
-2026-11-13,AMZN,BASE,True,WAIT_FOR_PULLBACK,259.39,263.39,False,266.66,263.39,259.39,10.74,31148510,50037492,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-11-16,AAPL,BASE,True,WAIT_FOR_PULLBACK,347.14,350.86,False,352.78,350.86,347.14,9.49,50293665,47993349,Price extended above buy zone,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-11-16,TSLA,BASE,True,EXIT_CANDIDATE,382.74,384.35,False,379.74,384.35,382.74,18.0,30255400,39001990,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-11-16,AVGO,BASE,True,EXIT_CANDIDATE,335.03,335.69,False,333.4,335.69,335.03,20.44,27023984,27330255,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
+2026-11-16,AMZN,BASE,True,EXIT_CANDIDATE,259.23,262.26,False,257.75,262.26,259.23,11.03,48054245,49630766,Close below EMA20,False,SPY below EMA20/SMA50 or SMA50 not rising ; QQQ below EMA20/SMA50 or SMA50 not rising,
